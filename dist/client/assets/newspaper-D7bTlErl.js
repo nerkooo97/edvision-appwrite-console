@@ -1,0 +1,1 @@
+import{n as e,t}from"./newspaper-D85ZhxkZ.js";export{e as __iconNode,t as default};

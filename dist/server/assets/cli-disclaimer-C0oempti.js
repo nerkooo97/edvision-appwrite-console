@@ -1,0 +1,2 @@
+var cli_disclaimer_default = "{% info title=\"Before proceeding\" %}\nEnsure you [**install**](/docs/tooling/command-line/installation#getting-started) the CLI, [**log in**](/docs/tooling/command-line/installation#login) to your Appwrite account, and [**initialize**](/docs/tooling/command-line/installation#initialization) your Appwrite project.\n{% /info %}\n";
+export { cli_disclaimer_default as default };

@@ -1,0 +1,1 @@
+import{ir as e,lat as t,nat as n}from"./main-uHRHOkhm.js";import"./scroll-area-BAv_Fw8-.js";import{t as r}from"./View-BNxkIBfN.js";var i=t(n());function a(){let{projectId:t}=e.useParams();return(0,i.jsx)(r,{},`functions-editor-${t}`)}export{a as component};

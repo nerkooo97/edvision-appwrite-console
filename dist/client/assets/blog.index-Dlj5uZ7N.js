@@ -1,0 +1,1 @@
+import{Yr as e,lat as t,nat as n}from"./main-uHRHOkhm.js";import"./MarketingSections-CH5egWlY.js";import{t as r}from"./View-BWtfRwjx.js";import"./BlogPostCard-CAHiKrDY.js";var i=t(n());function a(){let t=e.useLoaderData(),n=e.useSearch();return(0,i.jsx)(r,{...t,search:n})}export{a as component};

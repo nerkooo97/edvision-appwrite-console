@@ -1,0 +1,1 @@
+import{n as e,t}from"./rectangle-ellipsis-DPqNYM8_.js";export{e as __iconNode,t as default};

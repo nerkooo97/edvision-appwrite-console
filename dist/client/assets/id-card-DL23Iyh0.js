@@ -1,0 +1,1 @@
+import{n as e,t}from"./id-card-JQW-Yup7.js";export{e as __iconNode,t as default};

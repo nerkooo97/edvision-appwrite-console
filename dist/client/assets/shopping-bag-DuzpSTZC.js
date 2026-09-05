@@ -1,0 +1,1 @@
+import{n as e,t}from"./shopping-bag-EBh2023P.js";export{e as __iconNode,t as default};

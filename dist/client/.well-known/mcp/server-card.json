@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "io.appwrite/mcp",
+  "title": "Appwrite",
+  "description": "Backend API for auth, databases, storage, functions, messaging, and hosting.",
+  "version": "1.0.0",
+  "websiteUrl": "https://appwrite.io/docs/tooling/ai/mcp-servers",
+  "repository": {
+    "url": "https://github.com/appwrite/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.appwrite.io",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "OAuth 2.0 access token or Appwrite API key as a Bearer token.",
+          "isRequired": true,
+          "isSecret": true,
+          "value": "Bearer {token}",
+          "variables": {
+            "token": {
+              "description": "OAuth access token from the Appwrite authorization server, or a project API key.",
+              "isRequired": true,
+              "isSecret": true
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.appwrite/mcp": {
+      "serverName": "appwrite",
+      "documentationMarkdown": "https://appwrite.io/docs/tooling/ai/mcp-servers.md"
+    }
+  }
+}

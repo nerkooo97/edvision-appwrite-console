@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`path`,{d:`M4.929 4.929 19.07 19.071`,key:`196cmz`}],[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}]],n=e(`ban`,t);export{t as n,n as t};

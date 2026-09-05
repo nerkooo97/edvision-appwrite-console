@@ -1,0 +1,2 @@
+import { a as SERVICE_LABELS, c as getSpecFilename, d as isReferenceService, f as isReferenceVersion, h as REFERENCE_VERSIONS, i as REFERENCE_SERVICES, l as getSpecMode, m as LATEST_EXAMPLES_VERSION, n as PLATFORM_LABELS, o as getDefaultReferencePlatform, p as resolveSpecVersionDirs, r as REFERENCE_PLATFORMS, s as getReferenceOpenApiSpecDownloadFilename, t as PLATFORM_CODE_LANGUAGES, u as isReferencePlatform } from "./constants-Dd6QzW31.js";
+export { isReferenceVersion };

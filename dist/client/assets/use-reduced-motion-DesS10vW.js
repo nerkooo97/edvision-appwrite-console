@@ -1,0 +1,1 @@
+import{aat as e,ao as t,lat as n,oo as r,so as i}from"./main-uHRHOkhm.js";var a=n(e(),1);function o(){!r.current&&t();let[e]=(0,a.useState)(i.current);return e}export{o as t};

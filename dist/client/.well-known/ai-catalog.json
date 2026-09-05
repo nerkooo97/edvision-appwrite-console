@@ -1,0 +1,10 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:appwrite.io:mcp:appwrite",
+      "type": "application/mcp-server-card+json",
+      "url": "https://appwrite.io/.well-known/mcp/server-card.json"
+    }
+  ]
+}

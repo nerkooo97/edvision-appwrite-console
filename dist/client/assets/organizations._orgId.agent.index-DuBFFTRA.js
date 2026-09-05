@@ -1,0 +1,1 @@
+import{lat as e,nat as t}from"./main-uHRHOkhm.js";import{t as n}from"./AgentsView-Dy04MyWt.js";var r=e(t());function i(){return(0,r.jsx)(n,{})}export{i as component};

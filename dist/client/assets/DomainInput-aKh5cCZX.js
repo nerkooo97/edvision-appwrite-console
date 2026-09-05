@@ -1,0 +1,1 @@
+import{lat as e,nat as t}from"./main-uHRHOkhm.js";import{t as n}from"./DomainInput-DrHDnhpX.js";import{n as r}from"./WizardContext-CdyRE44z.js";var i=e(t(),1);function a(e){let{baseDomain:t}=r(),a=e.baseDomain??t??`appwrite.network`;return(0,i.jsx)(n,{...e,baseDomain:a})}export{a as t};

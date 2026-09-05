@@ -1,0 +1,84 @@
+# Appwrite
+
+> Appwrite is an open-source backend platform with authentication, databases, storage, serverless functions, messaging, and web hosting, available as a managed cloud service or self-hosted.
+
+For AI agents and automation, use the tools below.
+
+## MCP Server
+
+Add Appwrite to Cursor, Claude, and other MCP clients so agents can call the Appwrite API and search the docs.
+
+- [Remote MCP Server](https://mcp.appwrite.io): Hosted streamable HTTP MCP endpoint.
+- [Self-hosted MCP Server](https://github.com/appwrite/mcp/blob/main/docs/self-hosted.md): Run the MCP server locally with uvx and a project API key.
+- [MCP Server Card](https://appwrite.io/.well-known/mcp/server-card.json): SEP-1649 MCP Server Card for pre-connection discovery (/.well-known/mcp/server-card.json).
+- [AI Catalog](https://appwrite.io/.well-known/ai-catalog.json): Domain AI Catalog listing Appwrite MCP Server Cards (/.well-known/ai-catalog.json).
+- [MCP documentation](https://appwrite.io/docs/tooling/ai/mcp-servers.md): Setup guides for the API and docs MCP servers.
+
+## Skills
+
+Best practices for building with Appwrite in coding agents. Install with `npx skills add appwrite/skills`.
+
+- [Skills Discovery](https://appwrite.io/.well-known/agent-skills/index.json): Machine-readable list of Appwrite agent skills.
+- [Skills repository](https://github.com/appwrite/skills): Source for all Appwrite agent skills.
+- [appwrite-cli](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-cli/SKILL.md): Appwrite CLI skill. Use when managing Appwrite projects from the command line. Covers installation, login, project initialization, multi-file project configuration, deploying functions/sites/tables/buckets/teams/webhooks/topics, flag-based list queries, non-interactive CI/CD mode, and generating type-safe SDKs.
+- [appwrite-dart](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-dart/SKILL.md): Appwrite Dart SDK skill. Use when building Flutter apps (mobile, web, desktop) or server-side Dart applications with Appwrite. Covers client-side auth (email, OAuth), database queries, file uploads with native file handling, real-time subscriptions, and server-side admin via API keys for user management, database administration, storage, and functions.
+- [appwrite-dotnet](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-dotnet/SKILL.md): Appwrite .NET SDK skill. Use when building server-side C# or .NET applications with Appwrite, including ASP.NET and Blazor integrations. Covers user management, database/table CRUD, file storage, and functions via API keys.
+- [appwrite-go](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-go/SKILL.md): Appwrite Go SDK skill. Use when building server-side Go applications with Appwrite. Covers user management, database/table CRUD, file storage, and functions via API keys. Uses per-service packages and functional options pattern.
+- [appwrite-kotlin](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-kotlin/SKILL.md): Appwrite Kotlin SDK skill. Use when building native Android apps or server-side Kotlin/JVM backends with Appwrite. Covers client-side auth (email, OAuth with Activity integration), database queries, file uploads, real-time subscriptions with coroutine support, and server-side admin via API keys for user management, database administration, storage, and functions.
+- [appwrite-php](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-php/SKILL.md): Appwrite PHP SDK skill. Use when building server-side PHP applications with Appwrite, including Laravel and Symfony integrations. Covers user management, database/table CRUD, file storage, and functions via API keys.
+- [appwrite-python](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-python/SKILL.md): Appwrite Python SDK skill. Use when building server-side Python applications with Appwrite, including Django, Flask, and FastAPI integrations. Covers user management, database/table CRUD, file storage, and functions via API keys.
+- [appwrite-ruby](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-ruby/SKILL.md): Appwrite Ruby SDK skill. Use when building server-side Ruby applications with Appwrite, including Rails and Sinatra integrations. Covers user management, database/table CRUD, file storage, and functions via API keys.
+- [appwrite-rust](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-rust/SKILL.md): Appwrite Rust SDK skill. Use when building server-side Rust applications with Appwrite. Covers async client setup with API keys, user management, TablesDB database/table/row operations, file storage, function executions, permissions, queries, and error handling. Uses the crates.io `appwrite` package and Tokio.
+- [appwrite-swift](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-swift/SKILL.md): Appwrite Swift SDK skill. Use when building native iOS, macOS, watchOS, or tvOS apps, or server-side Swift applications with Appwrite. Covers client-side auth (email, OAuth), database queries, file uploads, real-time subscriptions with async/await, and server-side admin via API keys for user management, database administration, storage, and functions.
+- [appwrite-typescript](https://raw.githubusercontent.com/appwrite/skills/main/skills/appwrite-typescript/SKILL.md): Appwrite TypeScript SDK skill. Use when building browser-based JavaScript/TypeScript apps, React Native mobile apps, or server-side Node.js/Deno backends with Appwrite. Covers client-side auth (email, OAuth, anonymous), database queries, file uploads, real-time subscriptions, and server-side admin via API keys for user management, database administration, storage, and functions.
+- [Skills documentation](https://appwrite.io/docs/tooling/ai/skills.md): How to install and use Appwrite agent skills.
+
+## Command line
+
+Install and use the Appwrite CLI from the terminal.
+
+- [CLI installation](https://appwrite.io/docs/tooling/command-line/installation.md): Install the Appwrite CLI with npm, Homebrew, or a standalone binary.
+- [CLI commands](https://appwrite.io/docs/tooling/command-line/commands.md): Reference for Appwrite CLI commands.
+- [Non-interactive mode](https://appwrite.io/docs/tooling/command-line/non-interactive.md): Use the CLI in CI/CD pipelines.
+
+## Documentation
+
+Every documentation page has a plain Markdown version: append `.md` to its URL.
+
+- [Docs index (Markdown)](https://appwrite.io/docs.md): Top-level documentation sections for agents.
+- [Full documentation index](https://appwrite.io/docs/llms.txt): Nested link index of every documentation page.
+- [Complete documentation (single file)](https://appwrite.io/llms-full.txt): All documentation pages concatenated as one Markdown file.
+- [Docs as Markdown](https://appwrite.io/docs/tooling/ai/docs-as-markdown.md): How Appwrite exposes documentation for AI tools.
+- [API references](https://appwrite.io/docs/references.md): REST, GraphQL, and SDK API references.
+- [SDKs](https://appwrite.io/docs/sdks.md): Official Appwrite SDKs for every major platform.
+
+## Blog
+
+Articles on product updates and developer guides. The index enumerates every post. Append `.md` to any post URL for the raw Markdown source.
+
+- [Blog index (Markdown)](https://appwrite.io/blog.md): Flat list of every public blog post.
+- [Example: Announcing the S3 API: Use any S3 client with Appwrite Storage](https://appwrite.io/blog/post/announcing-s3-api.md): Appwrite Storage now exposes an S3-compatible API. Point the AWS CLI, the AWS SDKs, and tools like rclone at your Appwrite buckets, with no migration required.
+
+## Changelog
+
+Product updates and releases. Append `.md` to any entry URL for the raw Markdown source.
+
+- [Changelog index (Markdown)](https://appwrite.io/changelog.md): Flat list of every changelog entry.
+- [Example: Appwrite 1.4](https://appwrite.io/changelog/entry/2023-08-30.md)
+
+## Integrations
+
+Connect Appwrite to third-party tools. Append `.md` to any integration URL for the raw Markdown source.
+
+- [Integrations index (Markdown)](https://appwrite.io/integrations.md): Flat list of every integration guide.
+- [Example: Prompt ChatGPT](https://appwrite.io/integrations/ai-openai.md): Send text prompts to OpenAI GPT-3.5 and receive text generations
+
+## Optional
+
+- [Pricing](https://appwrite.io/pricing): Appwrite Cloud plans and pricing.
+- [Auth](https://appwrite.io/products/auth): Secure authentication with multiple sign-in methods.
+- [Databases](https://appwrite.io/products/databases): Scalable and robust databases.
+- [Storage](https://appwrite.io/products/storage): Securely store files with advanced compression and encryption.
+- [Functions](https://appwrite.io/products/functions): Deploy and scale serverless functions.
+- [Messaging](https://appwrite.io/products/messaging): Set up push notifications, emails, and SMS.
+- [Sites](https://appwrite.io/products/sites): Deploy and host static and server-side rendered websites.

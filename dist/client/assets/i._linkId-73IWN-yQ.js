@@ -1,0 +1,1 @@
+import{FA as e,MA as t,Xi as n,aat as r,lat as i}from"./main-uHRHOkhm.js";var a=i(r());function o(){let{linkId:r}=n.useParams();return(0,a.useLayoutEffect)(()=>{let n=r?.trim()??``;if(!e(n)){window.location.replace(`/sign-up`);return}window.location.replace(t(n))},[r]),null}export{o as component};

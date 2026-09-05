@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`path`,{d:`M3 5h18`,key:`1u36vt`}],[`path`,{d:`M3 12h18`,key:`1i2n21`}],[`path`,{d:`M3 19h18`,key:`awlh7x`}]],n=e(`text-align-justify`,t);export{t as __iconNode,n as default};

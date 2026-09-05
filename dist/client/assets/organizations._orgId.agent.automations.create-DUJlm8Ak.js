@@ -1,0 +1,1 @@
+import{Wu as e,lat as t,nat as n}from"./main-uHRHOkhm.js";var r=t(n());function i(){return(0,r.jsx)(e,{variant:`page`,section:`automations`,automationMode:`create`})}export{i as component};

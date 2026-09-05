@@ -1,0 +1,63 @@
+import { t as cn } from "./utils-DoqqkI3X.js";
+import { n as useT } from "./translate-DZcqveGn.js";
+import { t as Badge } from "./badge-L9aO6DfA.js";
+import { i as TooltipTrigger, n as TooltipContent, r as TooltipProvider, t as Tooltip } from "./tooltip-DUssQZhw.js";
+import { jsx, jsxs } from "react/jsx-runtime";
+import { BadgeCheck } from "lucide-react";
+var APPWRITE_BRAND_PINK = "#ff8d11";
+function AppwriteMarkIcon({ className }) {
+	return /* @__PURE__ */ jsxs("svg", {
+		width: "12",
+		height: "12",
+		viewBox: "0 0 24 24",
+		fill: "none",
+		xmlns: "http://www.w3.org/2000/svg",
+		className: cn("h-3 w-3 shrink-0", className),
+		"aria-hidden": true,
+		children: [/* @__PURE__ */ jsx("path", {
+			fill: APPWRITE_BRAND_PINK,
+			d: "M24.4429 16.4322V21.9096H10.7519C6.76318 21.9096 3.28044 19.7067 1.4171 16.4322C1.14622 15.9561 0.909137 15.4567 0.710264 14.9383C0.319864 13.9225 0.0744552 12.8325 0 11.6952V10.2143C0.0161646 9.96089 0.0416361 9.70942 0.0749451 9.46095C0.143032 8.95105 0.245898 8.45211 0.381093 7.96711C1.66006 3.36909 5.81877 0 10.7519 0C15.6851 0 19.8433 3.36909 21.1223 7.96711H15.2682C14.3072 6.4683 12.6437 5.4774 10.7519 5.4774C8.86017 5.4774 7.19668 6.4683 6.23562 7.96711C5.9427 8.42274 5.71542 8.92516 5.56651 9.46095C5.43425 9.93599 5.36371 10.4369 5.36371 10.9548C5.36371 12.5248 6.01324 13.94 7.05463 14.9383C8.01961 15.865 9.32061 16.4322 10.7519 16.4322H24.4429Z"
+		}), /* @__PURE__ */ jsx("path", {
+			fill: APPWRITE_BRAND_PINK,
+			d: "M24.4429 9.46094V14.9383H14.4492C15.4906 13.94 16.1401 12.5248 16.1401 10.9548C16.1401 10.4369 16.0696 9.93598 15.9373 9.46094H24.4429Z"
+		})]
+	});
+}
+function IconBadge({ label, variant, children }) {
+	return /* @__PURE__ */ jsxs(Tooltip, { children: [/* @__PURE__ */ jsx(TooltipTrigger, {
+		asChild: true,
+		children: /* @__PURE__ */ jsx(Badge, {
+			variant,
+			className: cn("inline-flex h-5 w-5 shrink-0 items-center justify-center p-0"),
+			"aria-label": label,
+			children
+		})
+	}), /* @__PURE__ */ jsx(TooltipContent, {
+		side: "top",
+		className: "text-[12px]",
+		children: label
+	})] });
+}
+function MarketplaceAppBadges({ app }) {
+	const t = useT();
+	if (!app.isOfficial && !app.isVerified) return null;
+	return /* @__PURE__ */ jsx(TooltipProvider, {
+		delayDuration: 300,
+		children: /* @__PURE__ */ jsxs("div", {
+			className: "flex shrink-0 items-center gap-1",
+			children: [app.isOfficial && /* @__PURE__ */ jsx(IconBadge, {
+				label: t("Official"),
+				variant: "inactive",
+				children: /* @__PURE__ */ jsx(AppwriteMarkIcon, {})
+			}), app.isVerified && /* @__PURE__ */ jsx(IconBadge, {
+				label: t("Verified"),
+				variant: "success",
+				children: /* @__PURE__ */ jsx(BadgeCheck, {
+					className: "h-3 w-3",
+					"aria-hidden": true
+				})
+			})]
+		})
+	});
+}
+export { MarketplaceAppBadges as t };

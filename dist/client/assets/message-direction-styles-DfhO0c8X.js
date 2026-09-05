@@ -1,0 +1,1 @@
+const e=`text-sky-600 dark:text-sky-400`,t=`text-emerald-600 dark:text-emerald-400`;export{t as n,e as t};

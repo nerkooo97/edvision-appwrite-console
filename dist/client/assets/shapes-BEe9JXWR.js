@@ -1,0 +1,1 @@
+import{n as e,t}from"./shapes-DHG7q-9S.js";export{e as __iconNode,t as default};

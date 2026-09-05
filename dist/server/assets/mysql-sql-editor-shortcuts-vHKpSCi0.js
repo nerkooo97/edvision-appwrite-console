@@ -1,0 +1,26 @@
+const MYSQL_SQL_RUN_SHORTCUT_RAW = "mod+enter";
+const MYSQL_SQL_RUN_SHORTCUT_COMBOS = ["meta+enter", "control+enter"];
+const MYSQL_SQL_EXPLAIN_SHORTCUT_RAW = "mod+shift+e";
+const MYSQL_SQL_EXPLAIN_SHORTCUT_COMBOS = ["meta+shift+e", "control+shift+e"];
+const MYSQL_SQL_SAVE_SHORTCUT_RAW = "mod+s";
+const MYSQL_SQL_SAVE_SHORTCUT_COMBOS = ["meta+s", "control+s"];
+const MYSQL_SQL_FORMAT_SHORTCUT_RAW = "shift+alt+f";
+const MYSQL_SQL_FORMAT_SHORTCUT_COMBOS = ["shift+alt+f"];
+const MYSQL_SQL_UNDO_SHORTCUT_RAW = "mod+z";
+const MYSQL_SQL_REDO_SHORTCUT_RAW = "mod+shift+z";
+const MYSQL_SQL_NEXT_TAB_SHORTCUT_RAW = "ctrl+tab";
+const MYSQL_SQL_NEXT_TAB_SHORTCUT_COMBOS = ["control+tab"];
+const MYSQL_SQL_PREV_TAB_SHORTCUT_RAW = "ctrl+shift+tab";
+const MYSQL_SQL_PREV_TAB_SHORTCUT_COMBOS = ["control+shift+tab"];
+const MYSQL_SQL_NEW_TAB_SHORTCUT_RAW = "mod+t";
+const MYSQL_SQL_NEW_TAB_SHORTCUT_COMBOS = ["meta+t", "control+t"];
+const MYSQL_SQL_CLOSE_TAB_SHORTCUT_RAW = "mod+w";
+const MYSQL_SQL_CLOSE_TAB_SHORTCUT_COMBOS = ["meta+w", "control+w"];
+const MYSQL_SQL_JUMP_TAB_PICKER_SHORTCUT_RAW = "mod+shift+p";
+const MYSQL_SQL_JUMP_TAB_PICKER_SHORTCUT_COMBOS = ["meta+shift+p", "control+shift+p"];
+[...Array.from({ length: 8 }, (_, index) => ({
+	id: `mysql-sql.jump-tab-${index + 1}`,
+	description: `Jump to tab ${index + 1}`,
+	raw: `mod+${index + 1}`
+}))];
+export { MYSQL_SQL_RUN_SHORTCUT_RAW as _, MYSQL_SQL_FORMAT_SHORTCUT_COMBOS as a, MYSQL_SQL_UNDO_SHORTCUT_RAW as b, MYSQL_SQL_JUMP_TAB_PICKER_SHORTCUT_RAW as c, MYSQL_SQL_NEXT_TAB_SHORTCUT_COMBOS as d, MYSQL_SQL_NEXT_TAB_SHORTCUT_RAW as f, MYSQL_SQL_RUN_SHORTCUT_COMBOS as g, MYSQL_SQL_REDO_SHORTCUT_RAW as h, MYSQL_SQL_EXPLAIN_SHORTCUT_RAW as i, MYSQL_SQL_NEW_TAB_SHORTCUT_COMBOS as l, MYSQL_SQL_PREV_TAB_SHORTCUT_RAW as m, MYSQL_SQL_CLOSE_TAB_SHORTCUT_RAW as n, MYSQL_SQL_FORMAT_SHORTCUT_RAW as o, MYSQL_SQL_PREV_TAB_SHORTCUT_COMBOS as p, MYSQL_SQL_EXPLAIN_SHORTCUT_COMBOS as r, MYSQL_SQL_JUMP_TAB_PICKER_SHORTCUT_COMBOS as s, MYSQL_SQL_CLOSE_TAB_SHORTCUT_COMBOS as t, MYSQL_SQL_NEW_TAB_SHORTCUT_RAW as u, MYSQL_SQL_SAVE_SHORTCUT_COMBOS as v, MYSQL_SQL_SAVE_SHORTCUT_RAW as y };

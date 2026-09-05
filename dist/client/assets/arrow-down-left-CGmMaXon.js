@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`path`,{d:`M17 7 7 17`,key:`15tmo1`}],[`path`,{d:`M17 17H7V7`,key:`1org7z`}]],n=e(`arrow-down-left`,t);export{t as n,n as t};

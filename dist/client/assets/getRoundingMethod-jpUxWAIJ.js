@@ -1,0 +1,1 @@
+import{oit as e,sit as t}from"./main-uHRHOkhm.js";function n(t,n){let r=e(t)-+e(n);return r<0?-1:r>0?1:r}function r(e){return t(e,Date.now())}function i(e){return t=>{let n=(e?Math[e]:Math.trunc)(t);return n===0?0:n}}export{r as n,n as r,i as t};

@@ -1,0 +1,1202 @@
+# Appwrite Docs
+
+> Appwrite documentation covering products, APIs, SDKs, tooling, self-hosting, and platform guides.
+
+Full documentation content (single file): https://appwrite.io/llms-full.txt
+
+Top-level docs index: https://appwrite.io/docs.md
+
+Every page below is also available as Markdown by appending `.md` to its URL.
+
+## Billing
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/advanced/billing.md): Understand Appwrite's plans, add-ons, service level agreements, and billing policies.
+- [Manage billing](https://appwrite.io/docs/advanced/billing/payments.md): Understand Appwrite's billing features, like budget caps, billing periods, taxes, and more.
+
+### Plans
+
+- [Free](https://appwrite.io/docs/advanced/billing/free.md): Appwrite's Free plan provides a generous free tier. Perfect for budding projects, hobbiests, and side-projects.
+- [Pro](https://appwrite.io/docs/advanced/billing/pro.md): Understand Appwrite's pricing plans, behaviors, billing cycles, and limitations.
+- [Enterprise](https://appwrite.io/docs/advanced/billing/enterprise.md): How Appwrite can accelerate enterprise development teams and provide custom support and hosting options.
+- [Open source](https://appwrite.io/docs/advanced/billing/oss.md): Learn how Appwrite supports open-source projects by providing free credits and other benefits.
+
+### Add ons
+
+- [Compute](https://appwrite.io/docs/advanced/billing/compute.md): Learn about CPU and memory options for Appwrite Functions and Sites on Cloud, including separate build and runtime specifications and plan build timeouts.
+- [Phone OTP](https://appwrite.io/docs/advanced/billing/phone-otp.md): Learn how Appwrite handles SMS-based OTP authentication for secure user verification.
+- [Image Transformations](https://appwrite.io/docs/advanced/billing/image-transformations.md): Learn how to transform images using Appwrite's storage API.
+- [Database Reads and Writes](https://appwrite.io/docs/advanced/billing/database-reads-and-writes.md): Learn how Appwrite handles database reads and writes and their associated costs.
+
+### SLAs
+
+- [Support SLA](https://appwrite.io/docs/advanced/billing/support-sla.md): Learn about Appwrite's support service level agreement (SLA) including response times, severity levels, and support commitments for different subscription tiers.
+- [Uptime SLA](https://appwrite.io/docs/advanced/billing/uptime-sla.md): Learn about Appwrite's uptime service level agreement and commitments for different subscription plans.
+
+### Policies
+
+- [Fair use](https://appwrite.io/docs/advanced/billing/fair-use-policy.md): Understand Appwrite's usage limits, prohibited activities, and enforcement actions.
+- [Abuse](https://appwrite.io/docs/advanced/billing/abuse.md): Guidelines on abusive behavior, prohibited activities, and reporting mechanisms under our Fair Use Policy.
+- [Refund](https://appwrite.io/docs/advanced/billing/refund-policy.md): Learn about Appwrite's refund policy for services, including eligibility criteria and the request process.
+
+## Migrations
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/advanced/migrations.md): Learn how to use Appwrite Migrations service to move projects from other vendors to Appwrite Cloud or from self-hosting to Cloud and the other way around.
+
+### Guides
+
+- [From Firebase](https://appwrite.io/docs/advanced/migrations/firebase.md): Migrate seamlessly from Firebase to Appwrite. Learn how to transfer data, authentication, and services from Firebase to leverage Appwrite's capabilities.
+- [From Supabase](https://appwrite.io/docs/advanced/migrations/supabase.md): Effortlessly migrate from Supabase to Appwrite. Discover migration strategies, data transfer methods, and tips for a smooth transition to Appwrite.
+- [From Nhost](https://appwrite.io/docs/advanced/migrations/nhost.md): Transition to Appwrite from NHost with confidence. Explore migration steps, considerations, and tools to ensure a successful migration process.
+- [From Cloud](https://appwrite.io/docs/advanced/migrations/cloud.md): Self-hosted application migration made easy with Appwrite. Discover the steps and strategies for migrating your self-hosted apps to Appwrite's managed platform.
+- [From self-hosted](https://appwrite.io/docs/advanced/migrations/self-hosted.md): Migrate to Appwrite from self-hosted platforms seamlessly. Learn how to move your applications and data to Appwrite for enhanced flexibility and control.
+
+## Security
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/advanced/security.md): Learn how Appwrite keeps your project, users, and data secure through security measures and compliance.
+
+### Compliances
+
+- [GDPR](https://appwrite.io/docs/advanced/security/gdpr.md): The safeguarding of your and your users' data is taken seriously at Appwrite. Learn about Appwrite's measures and compliance with the European General Data Protection Regulation (GDPR).
+- [PCI](https://appwrite.io/docs/advanced/security/pci.md): Learn about Appwrite's measure to achieve PCI compliance when handling payments and transactions, ensuring secure and safe handling of payment information and personal data.
+- [SOC 2](https://appwrite.io/docs/advanced/security/soc2.md): Learn about Appwrite Cloud's measures to achieve SOC 2 compliance.
+- [HIPAA](https://appwrite.io/docs/advanced/security/hipaa.md): Learn about Appwrite Cloud's measures to achieve HIPAA compliance.
+- [CCPA](https://appwrite.io/docs/advanced/security/ccpa.md): Protecting your and your users' data privacy is a priority at Appwrite. Learn about Appwrite's compliance with the California Consumer Privacy Act (CCPA).
+
+### Measures
+
+- [Authentication](https://appwrite.io/docs/advanced/security/authentication.md): Learn how Appwrite protects your passwords and helps users pick better passwords.
+- [Encryption](https://appwrite.io/docs/advanced/security/encryption.md): Learn about Appwrite's use of encryption across Appwrite's databases and storage buckets to protect user data.
+- [Multi-Factor authentication](https://appwrite.io/docs/advanced/security/mfa.md): Appwrite helps you secure your developer accounts with MFA (multi-factor authentication).
+- [HTTPS](https://appwrite.io/docs/advanced/security/https.md): Learn how Appwrite Cloud enforces secure connections by enforcing HTTPS on all endpoints.
+- [TLS](https://appwrite.io/docs/advanced/security/tls.md): Appwrite helps keep the web secure by generating TLS (Transport Layer Security) certificates for all user and generated domains.
+- [Backups](https://appwrite.io/docs/advanced/security/backups.md): Appwrite provides both self-managed project backups and automated disaster recovery backups to ensure data security and availability.
+- [Penetration tests](https://appwrite.io/docs/advanced/security/penetration-tests.md): Learn about how Appwrite keeps your data safe by employing manual third-party penetration tests to discover vulnerabilities.
+- [Audit logs](https://appwrite.io/docs/advanced/security/audit-logs.md): Appwrite provides audit logs to help detect anomalies and investigate security incidents.
+- [Abuse protection](https://appwrite.io/docs/advanced/security/abuse-protection.md): Learn how Appwrite protects your apps from abuse through rate limiting and cross-site scripting protection.
+
+### Access control
+
+- [Permissions](https://appwrite.io/docs/advanced/security/permissions.md): Enhance data security and access control with Appwrite platform permissions. Learn how to set fine-grained permissions to protect user data and resources.
+- [Roles](https://appwrite.io/docs/advanced/security/roles.md): Learn how to setup role-based access controls in the Appwrite Console
+- [Rate limits](https://appwrite.io/docs/advanced/security/rate-limits.md): Optimize application performance with Appwrite rate limits. Explore rate limiting strategies, configurations, and how to prevent abuse of your services.
+- [Dev keys](https://appwrite.io/docs/advanced/security/dev-keys.md): Bypass Appwrite rate limits and CORS errors in your development environment with Appwrite Dev keys.
+
+## Self-hosting
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/advanced/self-hosting.md): Set up your self-hosted Appwrite instance easily. Read the installation guide to configure and deploy Appwrite on your infrastructure for complete control.
+- [Installation](https://appwrite.io/docs/advanced/self-hosting/installation.md): Step-by-step guide to install Appwrite using Docker. Learn how to set up a self-hosted Appwrite instance with Docker Compose on any operating system.
+
+### Platform deployment
+
+- [AWS](https://appwrite.io/docs/advanced/self-hosting/platforms/aws.md): Deploy Appwrite on Amazon Web Services using the one-click Marketplace app.
+- [DigitalOcean](https://appwrite.io/docs/advanced/self-hosting/platforms/digitalocean.md): Deploy Appwrite on DigitalOcean using the one-click Marketplace app.
+- [Google Cloud](https://appwrite.io/docs/advanced/self-hosting/platforms/google-cloud.md): Deploy Appwrite on Google Cloud Platform using Compute Engine. Learn how to set up a production-ready Appwrite instance on GCP.
+- [Azure](https://appwrite.io/docs/advanced/self-hosting/platforms/azure.md): Deploy Appwrite on Microsoft Azure using Virtual Machines. Learn how to set up a production-ready Appwrite instance on Azure.
+- [Coolify](https://appwrite.io/docs/advanced/self-hosting/platforms/coolify.md): Learn how to self-host Appwrite on your infrastructure with Coolify.
+- [Dokploy](https://appwrite.io/docs/advanced/self-hosting/platforms/dokploy.md): Learn how to self-host Appwrite on your infrastructure with Dokploy.
+
+### Configuration
+
+- [Databases](https://appwrite.io/docs/advanced/self-hosting/configuration/databases.md): Configure the database backend for your self-hosted Appwrite instance. Learn about the supported database options and their configuration.
+- [Environment variables](https://appwrite.io/docs/advanced/self-hosting/configuration/environment-variables.md): Customize the behavior of your self-hosted Appwrite instance to your unique needs. Customize SMTP, SMS, functions, S3 adaptor, database, and other behaiors.
+- [Email delivery](https://appwrite.io/docs/advanced/self-hosting/configuration/email.md): Configure email services for your self-hosted Appwrite instance. Learn how to set up email notifications, templates, and delivery for your applications.
+- [SMS delivery](https://appwrite.io/docs/advanced/self-hosting/configuration/sms.md): Set up SMS services for your self-hosted Appwrite instance. Discover how to configure SMS notifications, verification, and messaging for your applications.
+- [Functions](https://appwrite.io/docs/advanced/self-hosting/configuration/functions.md): Harness the full power of self-hosted functions with Appwrite. Explore function deployment, management, and integration in your self-hosted environment.
+- [Sites](https://appwrite.io/docs/advanced/self-hosting/configuration/sites.md): Harness the full power of self-hosted sites with Appwrite. Explore site deployment, management, and integration in your self-hosted environment.
+- [Storage](https://appwrite.io/docs/advanced/self-hosting/configuration/storage.md): Manage self-hosted storage options with Appwrite. Explore file storage, uploads, and customization in your self-hosted Appwrite environment.
+- [TLS certificates](https://appwrite.io/docs/advanced/self-hosting/configuration/tls-certificates.md): Secure your self-hosted Appwrite instance with TLS certificates. Learn how to obtain, configure, and manage TLS certificates for enhanced security.
+- [Version control](https://appwrite.io/docs/advanced/self-hosting/configuration/version-control.md): Configure version control integration for Functions and Sites in your self-hosted Appwrite instance.
+
+### Production
+
+- [Preparation](https://appwrite.io/docs/advanced/self-hosting/production.md): Optimize self-hosted Appwrite for production environments. Learn key concepts and best practices for deploying Appwrite in production.
+- [Security](https://appwrite.io/docs/advanced/self-hosting/production/security.md): Implement essential security practices for your self-hosted Appwrite instance to protect your data and infrastructure.
+- [Scaling](https://appwrite.io/docs/advanced/self-hosting/production/scaling.md): Learn how to scale your self-hosted Appwrite instance horizontally and vertically to handle increased load.
+- [Rate limits](https://appwrite.io/docs/advanced/self-hosting/production/rate-limits.md): Configure rate limiting for your self-hosted Appwrite instance to protect against abuse and attacks.
+- [Email delivery](https://appwrite.io/docs/advanced/self-hosting/production/emails.md): Configure reliable email delivery for your self-hosted Appwrite instance in production environments.
+- [Error monitoring](https://appwrite.io/docs/advanced/self-hosting/production/errors.md): Configure error reporting and monitoring for your self-hosted Appwrite instance in production.
+- [Backups](https://appwrite.io/docs/advanced/self-hosting/production/backups.md): Learn how to set up and manage backups for your self-hosted Appwrite instance to ensure data safety and disaster recovery.
+- [Updates and migrations](https://appwrite.io/docs/advanced/self-hosting/production/updates.md): Keep your self-hosted Appwrite instance up-to-date. Learn how to perform updates, manage versions, and ensure your self-hosted Appwrite stays current.
+- [Debugging](https://appwrite.io/docs/advanced/self-hosting/production/debugging.md): Master debugging techniques for self-hosted Appwrite. Discover best practices and tools for troubleshooting and maintaining a robust deployment.
+
+## APIs
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/apis.md): Explore the ways to talk to Appwrite. Access every service through the REST and GraphQL APIs, subscribe to changes in Realtime, and react to events with webhooks.
+
+### Protocols
+
+- [REST](https://appwrite.io/docs/apis/rest.md): Discover the Appwrite REST API for building robust and scalable applications. Access detailed documentation on REST endpoints, authentication, and data management.
+- [GraphQL](https://appwrite.io/docs/apis/graphql.md): Get to know Appwrite GraphQL API for flexible data querying & manipulation. Our docs cover the schema, queries, mutations, integration tips and more.
+- [Realtime](https://appwrite.io/docs/apis/realtime.md): Want to build dynamic and interactive applications with real-time data updates? Appwrite Realtime API makes it possible, get started with our intro guide.
+
+### Concepts
+
+- [Events](https://appwrite.io/docs/apis/events.md): Harness the power of events in Appwrite. Explore event-driven architecture, event types, and how to use events to create dynamic applications.
+- [Webhooks](https://appwrite.io/docs/apis/webhooks.md): Leverage webhooks in the Appwrite platform for real-time updates. Learn how to configure, manage, and integrate webhooks to keep your applications in sync.
+- [Response codes](https://appwrite.io/docs/apis/response-codes.md): Understand Appwrite platform response codes and error handling. Learn to interpret HTTP status codes, error types, and implement best practices for handling errors gracefully.
+
+### Policies
+
+- [Release policy](https://appwrite.io/docs/apis/release-policy.md): Understand how Appwrite releases and versions its platforms and APIs.
+
+## Realtime
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/apis/realtime.md): Want to build dynamic and interactive applications with real-time data updates? Appwrite Realtime API makes it possible, get started with our intro guide.
+- [Authentication](https://appwrite.io/docs/apis/realtime/authentication.md): Learn how authentication works with Appwrite Realtime subscriptions and how to handle session-based access.
+- [Subscribe](https://appwrite.io/docs/apis/realtime/subscribe.md): Learn how to subscribe to realtime events from Appwrite services. Subscribe to single or multiple channels and manage your subscriptions.
+
+### Concepts
+
+- [Channels](https://appwrite.io/docs/apis/realtime/channels.md): Explore the available Realtime channels and learn how to use Channel helpers for type-safe subscriptions in Appwrite.
+- [Queries](https://appwrite.io/docs/apis/realtime/queries.md): Filter realtime events using queries. Use familiar SDK query methods to receive only the updates that match your conditions.
+- [Payload](https://appwrite.io/docs/apis/realtime/payload.md): Understand the structure of Appwrite Realtime subscription payloads and learn how to work with the response data.
+- [Presences](https://appwrite.io/docs/apis/realtime/presences.md): Use the Appwrite Presences API to track which users are currently active, broadcast their status, and subscribe to live presence updates over Realtime.
+
+### Configuration
+
+- [Custom endpoint](https://appwrite.io/docs/apis/realtime/custom-endpoint.md): Learn how to configure a custom WebSocket endpoint for the Appwrite Realtime API when using a custom proxy.
+
+## Apps
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/partners/apps.md): Register and manage OAuth apps with the Appwrite Console Apps API. Publish integrations, manage client secrets, and connect users through OAuth 2.0.
+- [Quick start](https://appwrite.io/docs/partners/apps/quick-start.md): Register an app and run the full Sign in with Appwrite flow, from consent screen to your first authorized API call.
+
+### Concepts
+
+- [Registration](https://appwrite.io/docs/partners/apps/registration.md): Register your app for Sign in with Appwrite through the Console.
+- [Scopes](https://appwrite.io/docs/partners/apps/scopes.md): The Sign in with Appwrite scope catalog, and how grants target the projects and organizations a user chooses.
+- [Consent](https://appwrite.io/docs/partners/apps/consent.md): What users see on the Sign in with Appwrite consent screen, what they can change, and what your app receives.
+- [Tokens](https://appwrite.io/docs/partners/apps/tokens.md): Use, refresh, and revoke the tokens Appwrite issues to your app through Sign in with Appwrite.
+- [Device flow](https://appwrite.io/docs/partners/apps/device-flow.md): Sign in with Appwrite from TVs, CLIs, and other input-constrained devices with the OAuth2 device authorization grant.
+
+## OAuth connect
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/partners/oauth-connect.md): Connect your platform to users' Appwrite accounts with OAuth 2.0. Request consent to manage organizations and projects on their behalf.
+- [Setup](https://appwrite.io/docs/partners/oauth-connect/setup.md): Register an OAuth app and implement the authorization code flow to connect your platform to user Appwrite accounts.
+- [Scopes](https://appwrite.io/docs/partners/oauth-connect/scopes.md): Request the right Console OAuth scopes when connecting to user Appwrite accounts from your partner platform.
+
+## Org API keys
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/partners/org-api-keys.md): Use organization API keys to proxy Appwrite and programmatically manage projects, domains, and resources from your partner platform.
+- [Scopes](https://appwrite.io/docs/partners/org-api-keys/scopes.md): Configure organization API key scopes for Console operations like managing projects, domains, and organization settings.
+
+## Organization
+
+### Partners API
+
+- [Overview](https://appwrite.io/docs/partners/organizations.md): Use the Appwrite Console Organization API to manage organizations, members, and org-level settings from your partner platform.
+- [Manage organizations](https://appwrite.io/docs/partners/organizations/manage.md): Create and update Appwrite organizations from your partner platform using the Console Organization API.
+- [Members and roles](https://appwrite.io/docs/partners/organizations/members.md): Manage organization members and roles from your partner platform using the Console Organization and Teams APIs.
+
+## Project
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/partners/project.md): Configure your Appwrite project, including auth methods, platforms, protocols, services, and policies.
+
+### Concepts
+
+- [Auth methods](https://appwrite.io/docs/partners/project/auth-methods.md): Enable or disable authentication methods on your Appwrite project programmatically using server SDKs.
+- [OAuth providers](https://appwrite.io/docs/partners/project/oauth.md): Configure OAuth2 sign-in providers for your project from the Console or programmatically with a Server SDK.
+- [API keys](https://appwrite.io/docs/partners/project/api-keys.md): Secure your application with Appwrite API Keys. Discover how to create and manage API keys to control access and enhance your application's security.
+- [Platforms](https://appwrite.io/docs/partners/project/platforms.md): Register Web, Apple, Android, Windows, and Linux apps to your Appwrite project programmatically using server SDKs.
+- [Protocols](https://appwrite.io/docs/partners/project/protocols.md): Enable or disable the REST, GraphQL, and WebSocket protocols on your Appwrite project programmatically using server SDKs.
+- [Services](https://appwrite.io/docs/partners/project/services.md): Enable or disable individual Appwrite services on your project programmatically using server SDKs.
+- [Policies](https://appwrite.io/docs/partners/project/policies.md): Configure password rules, session limits, user limits, and membership privacy on your Appwrite project programmatically using server SDKs.
+- [Mock phones](https://appwrite.io/docs/partners/project/mock-phones.md): Register fictional phone numbers and OTPs to test phone authentication flows without sending real SMS messages.
+- [Environment variables](https://appwrite.io/docs/partners/project/environment-variables.md): Use project, function, and site environment variables to pass constants and secrets to your Appwrite Functions and Appwrite Sites at build and runtime.
+- [SMTP](https://appwrite.io/docs/partners/project/smtp.md): Configure a custom SMTP server to send Appwrite's account management emails from your own domain, improve deliverability, and unlock custom email templates.
+- [Email templates](https://appwrite.io/docs/partners/project/email-templates.md): Customize the account management emails Appwrite sends to your users, including verification, password recovery, and magic URL emails, per locale.
+- [Labels](https://appwrite.io/docs/partners/project/labels.md): Assign customizable labels to your Appwrite project to categorize and filter projects within an organization.
+
+### Guides
+
+- [Provisioning](https://appwrite.io/docs/partners/project/provisioning.md): Apply a standard configuration to a customer's project programmatically with the Project API, including platforms, auth methods, services, protocols, and variables.
+- [Key rotation](https://appwrite.io/docs/partners/project/key-rotation.md): Manage the full life of an API key with the Project API, from issuing a scoped credential to auditing, rotating, and revoking it.
+- [Branded emails](https://appwrite.io/docs/partners/project/branded-emails.md): Route a customer's project emails through their own SMTP server and rebrand the email templates per locale with the Project API.
+
+## Project
+
+### Partners API
+
+- [Overview](https://appwrite.io/docs/partners/projects.md): Use the Appwrite Console Project API to create and manage projects for your customers from a partner platform.
+- [Create projects](https://appwrite.io/docs/partners/projects/create.md): Provision Appwrite projects for customers using the Console Project API and organization API keys.
+- [Manage resources](https://appwrite.io/docs/partners/projects/resources.md): Manage Appwrite project resources from your partner platform using the project SDK and project API keys.
+
+## Agent
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/agent.md): Chat with the Appwrite Agent in the Console to inspect your project, explain issues, suggest next steps, and run approved actions.
+- [Quick start](https://appwrite.io/docs/products/agent/quick-start.md): Open the Appwrite Agent in the Console, ask your first question, and optionally connect MCP so it can take actions.
+
+### Concepts
+
+- [Conversations](https://appwrite.io/docs/products/agent/conversations.md): Learn how Appwrite Agent conversations work, including threading, attachments, voice, and conversation management.
+- [Actions](https://appwrite.io/docs/products/agent/actions.md): Learn what the Appwrite Agent can inspect, clarify, and do in your projects and in the Console.
+- [MCP connections](https://appwrite.io/docs/products/agent/mcp.md): Learn how the Appwrite Agent uses MCP servers to call tools and take actions in your projects.
+- [Models](https://appwrite.io/docs/products/agent/models.md): Learn how Appwrite Agent models work, including the default model and bring-your-own provider keys.
+- [Memory](https://appwrite.io/docs/products/agent/memory.md): Learn how Appwrite Agent memory stores preferences, instructions, and facts across conversations.
+- [Automations](https://appwrite.io/docs/products/agent/automations.md): Learn how Appwrite Agent automations run scheduled prompts and create conversations on a cron schedule.
+
+### Guides
+
+- [Chat with the Agent](https://appwrite.io/docs/products/agent/chat.md): Open the Appwrite Agent panel or fullscreen chat, send prompts, and manage a conversation.
+- [Connect Appwrite MCP](https://appwrite.io/docs/products/agent/connect-mcp.md): Authorize Appwrite MCP so Appwrite Agent can take approved actions in your projects.
+- [Add a custom model](https://appwrite.io/docs/products/agent/add-model.md): Register a provider API key so the Appwrite Agent can use your own LLM credentials.
+- [Add memory](https://appwrite.io/docs/products/agent/add-memory.md): Save a preference, instruction, or fact for the Appwrite Agent to reuse across conversations.
+- [Create an automation](https://appwrite.io/docs/products/agent/create-automation.md): Schedule a recurring Appwrite Agent prompt with a cron schedule and optional model.
+
+## AI
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/ai.md): Learn how to implement machine learning models in your applications.
+
+### Concepts
+
+- [Computer vision](https://appwrite.io/docs/products/ai/computer-vision.md): Learn about the basics of computer vision, the most popular tasks and applications of computer vision and how we can leverage Appwrite to build computer vision enabled applications.
+- [Natural language processing](https://appwrite.io/docs/products/ai/natural-language.md): Learn about the basics of natural language processing, the most popular tasks and applications of natural language processing and how we can leverage Appwrite to build natural language processing enabled applications.
+- [Audio processing](https://appwrite.io/docs/products/ai/audio-processing.md): Learn about the basics of audio processing, the most popular tasks and applications of audio processing with ML and how we can leverage Appwrite to build audio processing enabled applications.
+
+### Computer vision
+
+- [Image classification](https://appwrite.io/docs/products/ai/tutorials/image-classification.md): Build image classification powered apps with Appwrite and learn how to use Hugging Face's image classification models.
+- [Object detection](https://appwrite.io/docs/products/ai/tutorials/object-detection.md): Build object recognition powered apps with Appwrite and learn how to use Hugging Face's image classification models.
+
+### Natural language processing
+
+- [Text generation](https://appwrite.io/docs/products/ai/tutorials/text-generation.md): Implement text generation into your app with Appwrite and Hugging Face.
+- [Language translation](https://appwrite.io/docs/products/ai/tutorials/language-translation.md): Implement language translation into your app with Appwrite and Hugging Face.
+
+### Audio processing
+
+- [Speech recognition](https://appwrite.io/docs/products/ai/tutorials/speech-recognition.md): Implement speech recognition into your app with Appwrite and Hugging Face.
+- [Text to speech](https://appwrite.io/docs/products/ai/tutorials/text-to-speech.md): Learn how to integrate Hugging Face into your Appwrite project for text to speech processing.
+- [Music generation](https://appwrite.io/docs/products/ai/tutorials/music-generation.md): Learn how to integrate Hugging Face into your Appwrite project for music generation.
+
+### Integrations
+
+- [Perplexity](https://appwrite.io/docs/products/ai/integrations/perplexity.md): Learn how to integrate the Perplexity API into your Appwrite project.
+- [Replicate](https://appwrite.io/docs/products/ai/integrations/replicate.md): Learn how to integrate Replicate into your Appwrite project.
+- [OpenAI](https://appwrite.io/docs/products/ai/integrations/openai.md): Learn how to integrate OpenAI into your Appwrite project.
+- [Pinecone](https://appwrite.io/docs/products/ai/integrations/pinecone.md): Learn how to integrate Pinecone into your Appwrite project.
+- [ElevenLabs](https://appwrite.io/docs/products/ai/integrations/elevenlabs.md): Learn how to integrate ElevenLabs into your Appwrite project.
+- [LangChain](https://appwrite.io/docs/products/ai/integrations/langchain.md): Learn how to integrate LangChain into your Appwrite project.
+- [Anyscale](https://appwrite.io/docs/products/ai/integrations/anyscale.md): Learn how to integrate Anyscale into your Appwrite project.
+- [LMNT](https://appwrite.io/docs/products/ai/integrations/lmnt.md): Learn how to integrate LMNT into your Appwrite project.
+- [Together AI](https://appwrite.io/docs/products/ai/integrations/togetherai.md): Learn how to integrate Together AI into your Appwrite project.
+- [fal.ai](https://appwrite.io/docs/products/ai/integrations/fal-ai.md): Learn how to integrate fal.ai into your Appwrite project.
+
+## Auth
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/auth.md): Explore Appwrite's powerful authentication solutions. Learn how to implement secure user authentication, manage user identities, and enhance your application's security."
+- [Quick start](https://appwrite.io/docs/products/auth/quick-start.md): Effortlessly add authentication to your apps - simple signup & login in just minutes with Appwrite Authentication
+
+### Concepts
+
+- [Accounts](https://appwrite.io/docs/products/auth/accounts.md): Unlock advanced user management - Appwrite's Account API for seamless signups, authentication, and dynamic permissions.
+- [Users](https://appwrite.io/docs/products/auth/users.md): Manage user identities and profiles effectively with Appwrite. Dive into user management features, account settings, and user data customization
+- [Teams](https://appwrite.io/docs/products/auth/teams.md): Master team management in the Appwrite Cloud. Explore team-related functions, permissions, and more.
+- [Impersonation](https://appwrite.io/docs/products/auth/impersonation.md): Let trusted operators act as another user in Appwrite Auth for support, QA, and troubleshooting while keeping the flow controlled and auditable.
+- [Preferences](https://appwrite.io/docs/products/auth/preferences.md): Store and manage user preferences in Appwrite using Account API and Teams API for individual and shared settings.
+- [Labels](https://appwrite.io/docs/products/auth/labels.md): Organize your users and grant custom permissions for subscriptions or VIP users with labels.
+- [Security](https://appwrite.io/docs/products/auth/security.md): Prioritize security in your applications with Appwrite. Discover best practices, security features, and guidelines to protect user data and ensure authentication integrity.
+- [Email policies](https://appwrite.io/docs/products/auth/email-policies.md): Control which email addresses can sign up for your Appwrite project by blocking free, aliased, or disposable email providers from the Console or Project API.
+- [Message templates](https://appwrite.io/docs/products/auth/message-templates.md): Communicate using your brand and voice by customizing email and SMS message templates, localized to your user's language.
+- [Tokens](https://appwrite.io/docs/products/auth/tokens.md): What are tokens and how to use them in Appwrite
+- [Identities](https://appwrite.io/docs/products/auth/identities.md): Handle multiple authentication methods per user through a unified system that maintains consistent identity across providers.
+- [Presences](https://appwrite.io/docs/products/auth/presences.md): Track which signed-in users are active right now and broadcast their status in realtime with the Appwrite Presences API.
+- [OAuth2 server](https://appwrite.io/docs/products/auth/oauth-server.md): Turn your Appwrite project into an OAuth 2.1 and OpenID Connect (OIDC) provider so third-party apps can sign in with your product.
+
+### Guides
+
+- [Email and password login](https://appwrite.io/docs/products/auth/email-password.md): Implement email and password authentication with Appwrite. Securely register and authenticate users in your applications using Appwrite's robust email-based authentication system.
+- [Phone (SMS) login](https://appwrite.io/docs/products/auth/phone-sms.md): Enhance security with SMS and phone authentication in Appwrite. Add multi-factor authentication via SMS, verify phone numbers, and protect user accounts.
+- [Magic URL login](https://appwrite.io/docs/products/auth/magic-url.md): Add magic URL to your authentication in Appwrite. Explore the convenience of passwordless login and email-based authentication using magic links.
+- [Email OTP login](https://appwrite.io/docs/products/auth/email-otp.md): Seamless sign in with Email OTP authentication in Appwrite. Learn how to provide simple and secure passwordless user accounts.
+- [OAuth2 login](https://appwrite.io/docs/products/auth/oauth2.md): Integrate OAuth2 authentication seamlessly with Appwrite. Learn how to connect your application with third-party OAuth2 providers for secure user login and access.
+- [Anonymous login](https://appwrite.io/docs/products/auth/anonymous.md): Manage user identities and profiles effectively with Appwrite. Dive into user management features, account settings, and user data customization.
+- [JWT login](https://appwrite.io/docs/products/auth/jwt.md): Integrate Appwrite's authentication into your server-side applications. Explore server integrations, best practices, and security considerations for seamless authentication.
+- [SSR login](https://appwrite.io/docs/products/auth/server-side-rendering.md): How to implement SSR authentication with Appwrite
+- [React library](https://appwrite.io/docs/products/auth/react.md): Add authentication to React apps with Appwrite's official React library. Supports client-side React, Next.js, and TanStack Start with a single provider and a small set of hooks.
+- [Custom token login](https://appwrite.io/docs/products/auth/custom-token.md): Limitless authentication flow in Appwrite. Find out how to implement custom authentication flow or connect to 3rd party authentication providers.
+- [Multi-factor authentication](https://appwrite.io/docs/products/auth/mfa.md): Add multiple layers of authentication to your applications powered by Appwrite Authentication.
+- [Auth status check](https://appwrite.io/docs/products/auth/checking-auth-status.md): Learn how to check a user's authentication status in your Appwrite application and handle authentication flow appropriately.
+- [User verification](https://appwrite.io/docs/products/auth/verify-user.md): Learn about Appwrite's email and phone verification system, including verification flows and role-based access control.
+- [Team invites](https://appwrite.io/docs/products/auth/team-invites.md): Learn how to manage team invites in Appwrite. Implement both client-side email invites and server-side custom flows for team memberships.
+- [Multi-tenancy](https://appwrite.io/docs/products/auth/multi-tenancy.md): Learn how to implement multi-tenancy in your applications using Appwrite Teams.
+
+### References
+
+- [Account API](https://appwrite.io/docs/references/cloud/client-web/account.md)
+- [Users API](https://appwrite.io/docs/references/cloud/server-nodejs/users.md)
+- [Teams API](https://appwrite.io/docs/references/cloud/client-web/teams.md)
+
+## OAuth2 server
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/auth/oauth-server.md): Turn your Appwrite project into an OAuth 2.1 and OpenID Connect (OIDC) provider so third-party apps can sign in with your product.
+- [Quick start](https://appwrite.io/docs/products/auth/oauth-server/quick-start.md): Enable Appwrite's OAuth2 server, register a client, and run your first authorization code sign-in end to end.
+
+### Concepts
+
+- [Clients](https://appwrite.io/docs/products/auth/oauth-server/clients.md): Register confidential and public OAuth clients against your Appwrite project's OAuth2 server and manage them from your own developer platform.
+- [Authorization](https://appwrite.io/docs/products/auth/oauth-server/authorization.md): How clients request authorization and how to host a consent screen for your Appwrite OAuth2 server.
+- [Tokens](https://appwrite.io/docs/products/auth/oauth-server/tokens.md): Access, refresh, and ID tokens issued by Appwrite's OAuth2 server, their lifetimes, and how to validate, refresh, introspect, revoke, and end sessions.
+- [Scopes](https://appwrite.io/docs/products/auth/oauth-server/scopes.md): The built-in OpenID Connect scopes and the custom scopes clients can request from your Appwrite OAuth2 server.
+- [Device flow](https://appwrite.io/docs/products/auth/oauth-server/device-flow.md): Authorize TVs, CLIs, and other input-constrained devices against your Appwrite OAuth2 server with the device authorization grant.
+
+### Guides
+
+- [Sign in with your product](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-1.md): Build an end-to-end "Sign in with your product" experience against your Appwrite OAuth2 server, from the consent screen to the token exchange.
+- [Custom scopes](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-1.md): Define custom scopes on your Appwrite OAuth2 server, request them from a client, and enforce them on your own API.
+
+## Avatars
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/avatars.md): Generate avatars, icons, and images for your applications. Use Appwrite Avatars to create user initials, QR codes, country flags, browser icons, and more.
+- [Quick start](https://appwrite.io/docs/products/avatars/quick-start.md): Get started quickly with Appwrite Avatars. Learn how to generate user initials, QR codes, and other avatar images in minutes.
+
+### Concepts
+
+- [User initials](https://appwrite.io/docs/products/avatars/initials.md): Generate avatar images from user names or initials with customizable appearance and dimensions.
+- [QR codes](https://appwrite.io/docs/products/avatars/qr-codes.md): Generate QR codes from text strings with customizable size and margin for authentication, sharing, and data encoding.
+- [Country flags](https://appwrite.io/docs/products/avatars/flags.md): Retrieve country flag icons by country code for displaying user locations and regional information.
+- [Browser icons](https://appwrite.io/docs/products/avatars/browsers.md): Retrieve browser icons for displaying user agent information and device compatibility.
+- [Payment methods](https://appwrite.io/docs/products/avatars/payment-methods.md): Retrieve payment method logos for checkout flows and transaction displays.
+- [Favicons](https://appwrite.io/docs/products/avatars/favicons.md): Fetch favicons from remote websites for link previews and bookmark displays.
+- [Screenshots](https://appwrite.io/docs/products/avatars/screenshots.md): Capture webpage screenshots with customizable viewport, theme, browser settings, and geolocation options for comprehensive web page documentation.
+- [Image proxy](https://appwrite.io/docs/products/avatars/image-manipulation.md): Transform remote images with resizing, cropping, and quality adjustments for optimal display and performance.
+
+### References
+
+- [Avatars API](https://appwrite.io/docs/references/cloud/client-web/avatars.md)
+
+## Databases
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases.md): Store and query your application data with Appwrite Databases. Choose between Appwrite databases with managed APIs and dedicated native databases with direct access.
+
+### Appwrite databases
+
+- [TablesDB](https://appwrite.io/docs/products/databases/tablesdb.md): Store and query structured data with Appwrite TablesDB. Tables provide performant and scalable storage for your application, business, and user data.
+- [DocumentsDB](https://appwrite.io/docs/products/databases/documentsdb.md): Store and query schemaless documents with Appwrite DocumentsDB. Collections give you flexible, JSON-style storage for your application, business, and user data.
+- [VectorsDB](https://appwrite.io/docs/products/databases/vectorsdb.md): Store vector embeddings and run similarity search with Appwrite VectorsDB to power semantic search, recommendations, and other AI features.
+
+### Native databases
+
+- [PostgreSQL](https://appwrite.io/docs/products/databases/postgresql.md): Run a dedicated, native PostgreSQL database provisioned for your project and connect to it directly with standard PostgreSQL clients.
+- [MySQL](https://appwrite.io/docs/products/databases/mysql.md): Run a native MySQL database provisioned for your project and connect to it directly with standard MySQL clients.
+
+## DocumentsDB
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases/documentsdb.md): Store and query schemaless documents with Appwrite DocumentsDB. Collections give you flexible, JSON-style storage for your application, business, and user data.
+- [Quick start](https://appwrite.io/docs/products/databases/documentsdb/quick-start.md): Get started with Appwrite DocumentsDB. Follow a step-by-step guide to create your first database, add a collection, and perform basic document operations.
+
+### Concepts
+
+- [Databases](https://appwrite.io/docs/products/databases/documentsdb/databases.md): Dive deeper into Appwrite DocumentsDB and database configuration. Learn how to create and manage multiple databases for your application.
+- [Collections](https://appwrite.io/docs/products/databases/documentsdb/collections.md): Organize documents with Appwrite DocumentsDB collections. Learn how to create collections, configure permissions, and add indexes for fast queries.
+- [Documents](https://appwrite.io/docs/products/databases/documentsdb/documents.md): Create, read, update, and delete documents in Appwrite DocumentsDB. Learn how to work with schemaless JSON documents in your collections.
+- [Permissions](https://appwrite.io/docs/products/databases/documentsdb/permissions.md): Control access to your DocumentsDB data with permissions. Learn how to set collection level and document level access rules.
+- [Queries](https://appwrite.io/docs/products/databases/documentsdb/queries.md): Harness the power of querying with Appwrite DocumentsDB. Discover various query options, filtering, sorting, and advanced querying techniques.
+- [Order](https://appwrite.io/docs/products/databases/documentsdb/order.md): Understand how to do data ordering in Appwrite DocumentsDB. Learn how to order and sort your database records for efficient data retrieval.
+- [Backups](https://appwrite.io/docs/products/databases/documentsdb/backups.md): Learn how to back up and restore your DocumentsDB databases, ensuring data security and seamless recovery.
+
+### Guides
+
+- [Pagination](https://appwrite.io/docs/products/databases/documentsdb/pagination.md): Implement pagination for large data sets in Appwrite DocumentsDB. Explore techniques for splitting and displaying data across multiple pages.
+- [Transactions](https://appwrite.io/docs/products/databases/documentsdb/transactions.md): Stage multiple database operations and commit them atomically. Group changes across databases and collections with ordering, isolation, and conflict detection.
+- [Bulk operations](https://appwrite.io/docs/products/databases/documentsdb/bulk-operations.md): Perform bulk operations on documents within your collections for efficient data handling.
+- [Atomic numeric operations](https://appwrite.io/docs/products/databases/documentsdb/atomic-numeric-operations.md): Safely increment and decrement numeric fields without race conditions. Perfect for counters, quotas, inventory, and usage metrics in high-concurrency applications.
+- [Timestamp overrides](https://appwrite.io/docs/products/databases/documentsdb/timestamp-overrides.md): Set custom $createdAt and $updatedAt timestamps for your documents when using server SDKs.
+- [JSON imports](https://appwrite.io/docs/products/databases/documentsdb/json-imports.md): Create documents in a DocumentsDB collection by uploading a JSON file. Seed test data, restore a dataset, or migrate from another system without writing custom scripts.
+- [JSON exports](https://appwrite.io/docs/products/databases/documentsdb/json-exports.md): Export documents from a DocumentsDB collection to a JSON file. Share datasets, create custom backups, or move data to another system without writing custom scripts.
+
+## MySQL
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases/mysql.md): Run a native MySQL database provisioned for your project and connect to it directly with standard MySQL clients.
+- [Quick start](https://appwrite.io/docs/products/databases/mysql/quick-start.md): Create your first native MySQL database in the Appwrite Console, retrieve its credentials, and run your first queries with the mysql client.
+
+### Concepts
+
+- [Tables and data types](https://appwrite.io/docs/products/databases/mysql/concepts/tables.md): Create MySQL tables with the right column types and constraints. Covers numeric, string, date and time, JSON, ENUM, and generated columns.
+- [Querying rows](https://appwrite.io/docs/products/databases/mysql/concepts/queries.md): Read and write MySQL rows with SELECT, INSERT, UPDATE, and DELETE. Covers filtering, aggregation, pagination, and upserts.
+- [Joins and relationships](https://appwrite.io/docs/products/databases/mysql/concepts/joins.md): Model relationships with foreign keys and combine MySQL tables with INNER, LEFT, RIGHT, and CROSS joins.
+- [Indexes](https://appwrite.io/docs/products/databases/mysql/concepts/indexes.md): Speed up MySQL queries with B-tree, composite, prefix, functional, and invisible indexes, and read EXPLAIN ANALYZE output.
+- [Transactions](https://appwrite.io/docs/products/databases/mysql/concepts/transactions.md): Group MySQL statements into atomic transactions. Covers COMMIT, ROLLBACK, savepoints, isolation levels, locking, and deadlocks.
+- [Data modeling](https://appwrite.io/docs/products/databases/mysql/concepts/data-modeling.md): Design MySQL schemas with normalization, decide when to denormalize, and use views to shape data for readers.
+- [Security and access control](https://appwrite.io/docs/products/databases/mysql/concepts/access-control.md): How MySQL privileges work, what the admin account on your database can do, and patterns for restricting access to data.
+
+### Connecting
+
+- [Connections](https://appwrite.io/docs/products/databases/mysql/connections.md): Connect to your MySQL database with the mysql client or any standard driver. Retrieve connection details and rotate the primary password.
+- [Connection pooling](https://appwrite.io/docs/products/databases/mysql/connection-pooling.md): Configure the per-database connection pooler to serve many short-lived clients, with automatic read/write splitting when high availability is enabled.
+
+### Manage
+
+- [Backups](https://appwrite.io/docs/products/databases/mysql/backups.md): Scheduled backups, manual backups, restores, and point-in-time recovery for your MySQL database.
+- [Branches](https://appwrite.io/docs/products/databases/mysql/branches.md): Spin up an ephemeral, isolated copy of your MySQL database in seconds from a storage snapshot. Use branches for previews, migrations, and testing.
+- [High availability](https://appwrite.io/docs/products/databases/mysql/high-availability.md): Run up to five read replicas with asynchronous, synchronous, or quorum replication and automatic failover for your MySQL database.
+- [Scaling](https://appwrite.io/docs/products/databases/mysql/scaling.md): Resize the compute specification of your MySQL database with zero downtime and grow storage automatically as your data grows.
+- [Network security](https://appwrite.io/docs/products/databases/mysql/network-security.md): TLS by default, IP allowlists, and idle timeouts for your MySQL database.
+- [Monitoring](https://appwrite.io/docs/products/databases/mysql/monitoring.md): Check database health, watch lifecycle states, and inspect active connections on your native MySQL database.
+- [Maintenance](https://appwrite.io/docs/products/databases/mysql/maintenance.md): Maintenance windows, online engine version upgrades, pause and resume, and the lifecycle states of your MySQL database.
+
+### Integrations
+
+- [Node.js drivers](https://appwrite.io/docs/products/databases/mysql/integrations/drivers.md): Connect to an Appwrite native MySQL database from Node.js with mysql2 or MariaDB Connector/Node.js. Configure pools, TLS verification, serverless connection management, and troubleshooting.
+- [Prisma](https://appwrite.io/docs/products/databases/mysql/integrations/prisma.md): Use Prisma ORM with an Appwrite native MySQL database. Configure the Prisma 7 datasource, apply schema changes through the direct connection, and instantiate Prisma Client with the MySQL driver adapter.
+- [Drizzle](https://appwrite.io/docs/products/databases/mysql/integrations/drizzle.md): Use Drizzle ORM with an Appwrite native MySQL database. Configure mysql2, run migrations against the direct connection, and pool runtime traffic from serverless environments.
+- [Auth.js](https://appwrite.io/docs/products/databases/mysql/integrations/auth-js.md): Use an Appwrite native MySQL database as the backing store for Auth.js (NextAuth.js). Persist users, accounts, and sessions through the Prisma adapter.
+- [Better Auth](https://appwrite.io/docs/products/databases/mysql/integrations/better-auth.md): Use an Appwrite native MySQL database as the database for Better Auth. Configure mysql2, run schema generation and migrations over a direct connection, and store users and sessions in MySQL.
+- [Laravel](https://appwrite.io/docs/products/databases/mysql/integrations/laravel.md): Use Laravel and Eloquent with an Appwrite native MySQL database. Configure the connection, run migrations against the direct port, and pool serverless traffic through the connection pooler.
+- [Rails](https://appwrite.io/docs/products/databases/mysql/integrations/rails.md): Use Ruby on Rails and ActiveRecord with an Appwrite native MySQL database. Configure database.yml, run migrations against the direct database port, and size the ActiveRecord pool.
+- [Django](https://appwrite.io/docs/products/databases/mysql/integrations/django.md): Use Django's ORM with an Appwrite native MySQL database. Configure the DATABASES setting, run migrations against the direct MySQL port, and choose the right pooler mode for Django connections.
+- [FastAPI](https://appwrite.io/docs/products/databases/mysql/integrations/fastapi.md): Use FastAPI and SQLAlchemy 2.x with an Appwrite native MySQL database. Configure the async asyncmy engine, pass TLS through connect_args, inject a session per request, and run Alembic migrations against the direct database port.
+- [Spring Boot](https://appwrite.io/docs/products/databases/mysql/integrations/spring-boot.md): Connect a Spring Boot application to an Appwrite native MySQL database with Spring Data JPA and Hibernate. Configure the JDBC datasource and HikariCP pool, map entities, and run Flyway or Liquibase migrations against MySQL.
+- [EF Core](https://appwrite.io/docs/products/databases/mysql/integrations/ef-core.md): Use Entity Framework Core with an Appwrite native MySQL database. Configure the MySQL provider, run migrations against the direct MySQL host, and rely on the provider's connection pool from an ASP.NET server.
+- [GORM](https://appwrite.io/docs/products/databases/mysql/integrations/gorm.md): Use GORM with an Appwrite native MySQL database in Go. Build the MySQL DSN, open a connection, size the database/sql pool, and run migrations with AutoMigrate or golang-migrate.
+- [Next.js](https://appwrite.io/docs/products/databases/mysql/integrations/nextjs.md): Connect a Next.js App Router application to an Appwrite native MySQL database from Route Handlers, Server Actions, and Server Components, pool from serverless, and fall back to the SQL API on the Edge runtime.
+- [dbt](https://appwrite.io/docs/products/databases/mysql/integrations/dbt.md): Run dbt Core transformations against an Appwrite native MySQL database with the community dbt-mysql adapter.
+- [Metabase](https://appwrite.io/docs/products/databases/mysql/integrations/metabase.md): Connect Metabase to an Appwrite native MySQL database for analytics. Configure MySQL connection details, require TLS on Cloud, and build dashboards on a session-safe connection.
+- [Grafana](https://appwrite.io/docs/products/databases/mysql/integrations/grafana.md): Connect Grafana to an Appwrite native MySQL database as a data source and build dashboards. Configure the MySQL data source and provision it from YAML.
+- [Retool](https://appwrite.io/docs/products/databases/mysql/integrations/retool.md): Connect Retool to an Appwrite native MySQL database to build internal and admin tools. Fetch connection details with the API, configure the MySQL resource with TLS, and allow Retool Cloud network access when needed.
+
+## PostgreSQL
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases/postgresql.md): Run a dedicated, native PostgreSQL database provisioned for your project and connect to it directly with standard PostgreSQL clients.
+- [Quick start](https://appwrite.io/docs/products/databases/postgresql/quick-start.md): Create your first native PostgreSQL database in the Appwrite Console, run your first queries in the SQL editor, and connect with psql.
+
+### Concepts
+
+- [Tables and data types](https://appwrite.io/docs/products/databases/postgresql/concepts/tables.md): Create PostgreSQL tables with the right column types and constraints. Covers numeric, text, date and time, JSON, and array types.
+- [Querying rows](https://appwrite.io/docs/products/databases/postgresql/concepts/queries.md): Read and write PostgreSQL rows with SELECT, INSERT, UPDATE, and DELETE. Covers filtering, aggregation, pagination, and upserts.
+- [Joins and relationships](https://appwrite.io/docs/products/databases/postgresql/concepts/joins.md): Model relationships with foreign keys and combine PostgreSQL tables with INNER, LEFT, FULL, and CROSS joins.
+- [Indexes](https://appwrite.io/docs/products/databases/postgresql/concepts/indexes.md): Speed up PostgreSQL queries with B-tree, composite, partial, and expression indexes, and read EXPLAIN ANALYZE output.
+- [Transactions](https://appwrite.io/docs/products/databases/postgresql/concepts/transactions.md): Group PostgreSQL statements into atomic transactions. Covers COMMIT, ROLLBACK, savepoints, isolation levels, locking, and deadlocks.
+- [Data modeling](https://appwrite.io/docs/products/databases/postgresql/concepts/data-modeling.md): Design PostgreSQL schemas with normalization, decide when to denormalize, and use views to shape data for readers.
+- [Security and access control](https://appwrite.io/docs/products/databases/postgresql/concepts/access-control.md): Control access to PostgreSQL with roles, GRANT and REVOKE, and row-level security policies for multi-tenant data.
+
+### Connecting
+
+- [Connections](https://appwrite.io/docs/products/databases/postgresql/connections.md): Connect to your PostgreSQL database with psql or any standard driver. Retrieve connection details and rotate the primary password.
+- [Connection pooling](https://appwrite.io/docs/products/databases/postgresql/connection-pooling.md): Configure the per-database connection pooler to serve many short-lived clients, with automatic read/write splitting when high availability is enabled.
+
+### Manage
+
+- [Extensions](https://appwrite.io/docs/products/databases/postgresql/extensions.md): Install and manage PostgreSQL extensions like PostGIS, pgvector, and pg_trgm on your database, at no extra cost.
+- [Backups](https://appwrite.io/docs/products/databases/postgresql/backups.md): Scheduled backups, manual backups, restores, and point-in-time recovery for your PostgreSQL database.
+- [Branches](https://appwrite.io/docs/products/databases/postgresql/branches.md): Spin up an ephemeral, isolated copy of your PostgreSQL database in seconds from a storage snapshot. Use branches for previews, migrations, and testing.
+- [High availability](https://appwrite.io/docs/products/databases/postgresql/high-availability.md): Run up to five read replicas with asynchronous, synchronous, or quorum replication and automatic failover for your PostgreSQL database.
+- [Scaling](https://appwrite.io/docs/products/databases/postgresql/scaling.md): Resize the compute specification of your PostgreSQL database with zero downtime and grow storage automatically as your data grows.
+- [Network security](https://appwrite.io/docs/products/databases/postgresql/network-security.md): TLS by default, IP allowlists, and idle timeouts for your PostgreSQL database.
+- [Monitoring](https://appwrite.io/docs/products/databases/postgresql/monitoring.md): Watch compute, connections, storage, and workload metrics live, inspect active connections, and check database health on your PostgreSQL database.
+- [Maintenance](https://appwrite.io/docs/products/databases/postgresql/maintenance.md): Maintenance windows, online engine version upgrades, pause and resume, and the lifecycle states of your PostgreSQL database.
+
+### Integrations
+
+- [Node.js drivers](https://appwrite.io/docs/products/databases/postgresql/integrations/drivers.md): Connect to an Appwrite native PostgreSQL database from Node.js with node-postgres or postgres.js. Configure pools, TLS verification, serverless connection management, and troubleshooting.
+- [Prisma](https://appwrite.io/docs/products/databases/postgresql/integrations/prisma.md): Use Prisma ORM with an Appwrite native PostgreSQL database. Configure the Prisma 7 datasource, run migrations through the direct connection, and route serverless runtime traffic through the connection pooler.
+- [Drizzle](https://appwrite.io/docs/products/databases/postgresql/integrations/drizzle.md): Use Drizzle ORM with an Appwrite native PostgreSQL database. Configure the driver, run migrations against the direct connection, and pool runtime traffic from serverless environments.
+- [Auth.js](https://appwrite.io/docs/products/databases/postgresql/integrations/auth-js.md): Use an Appwrite native PostgreSQL database as the backing store for Auth.js (NextAuth.js). Persist users, accounts, and sessions through a Prisma or Drizzle adapter, pooled from serverless runtimes.
+- [Better Auth](https://appwrite.io/docs/products/databases/postgresql/integrations/better-auth.md): Use an Appwrite native PostgreSQL database as the database for Better Auth. Point runtime traffic at the pooler, run schema generation and migrations over a direct connection, and store users and sessions in PostgreSQL.
+- [Laravel](https://appwrite.io/docs/products/databases/postgresql/integrations/laravel.md): Use Laravel and Eloquent with an Appwrite native PostgreSQL database. Configure the connection, run migrations against the direct port, and pool serverless traffic through the connection pooler.
+- [Rails](https://appwrite.io/docs/products/databases/postgresql/integrations/rails.md): Use Ruby on Rails and ActiveRecord with an Appwrite native PostgreSQL database. Configure database.yml, run migrations against the direct database port, and size the ActiveRecord pool.
+- [Django](https://appwrite.io/docs/products/databases/postgresql/integrations/django.md): Use Django's ORM with an Appwrite native PostgreSQL database. Configure the DATABASES setting with TLS options, run migrations on the direct PostgreSQL port, and tune persistent connections for pooling.
+- [FastAPI](https://appwrite.io/docs/products/databases/postgresql/integrations/fastapi.md): Use FastAPI and SQLAlchemy 2.x with an Appwrite native PostgreSQL database. Configure the async asyncpg engine, pass TLS through connect_args, inject a session per request, and run Alembic migrations against the direct database port.
+- [Spring Boot](https://appwrite.io/docs/products/databases/postgresql/integrations/spring-boot.md): Connect a Spring Boot application to an Appwrite native PostgreSQL database with Spring Data JPA and Hibernate. Configure the JDBC datasource and HikariCP pool, map entities, and run Flyway or Liquibase migrations against PostgreSQL.
+- [EF Core](https://appwrite.io/docs/products/databases/postgresql/integrations/ef-core.md): Use Entity Framework Core with an Appwrite native PostgreSQL database. Configure the Npgsql connection string, run migrations against the direct PostgreSQL host, and rely on the driver's built-in connection pool from an ASP.NET server.
+- [GORM](https://appwrite.io/docs/products/databases/postgresql/integrations/gorm.md): Use GORM with an Appwrite native PostgreSQL database in Go. Build the DSN, open a connection, size the database/sql pool against the direct connection, and run migrations with AutoMigrate or golang-migrate.
+- [Next.js](https://appwrite.io/docs/products/databases/postgresql/integrations/nextjs.md): Connect a Next.js App Router application to an Appwrite native PostgreSQL database from Route Handlers, Server Actions, and Server Components, pool from serverless, and fall back to the SQL API on the Edge runtime.
+- [dbt](https://appwrite.io/docs/products/databases/postgresql/integrations/dbt.md): Run dbt transformations against an Appwrite native PostgreSQL database. Configure profiles.yml for the direct engine port, size threads to your connection budget, and test models against a branch in CI.
+- [Metabase](https://appwrite.io/docs/products/databases/postgresql/integrations/metabase.md): Connect Metabase to an Appwrite native PostgreSQL database for analytics. Use a read-only PostgreSQL role, configure SSL, and build dashboards on a session-safe connection.
+- [Grafana](https://appwrite.io/docs/products/databases/postgresql/integrations/grafana.md): Connect Grafana to an Appwrite native PostgreSQL database as a data source and build dashboards. Create a read-only reporting role, configure the PostgreSQL data source with TLS, and provision it from YAML.
+- [Retool](https://appwrite.io/docs/products/databases/postgresql/integrations/retool.md): Connect Retool to an Appwrite native PostgreSQL database to build internal and admin tools. Retrieve credentials from the Console, configure the PostgreSQL resource with TLS, and allow Retool Cloud network access when needed.
+
+## Databases
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases/tablesdb.md): Store and query structured data with Appwrite TablesDB. Tables provide performant and scalable storage for your application, business, and user data.
+- [Quick start](https://appwrite.io/docs/products/databases/tablesdb/quick-start.md): Get started with Appwrite Databases. Follow a step-by-step guide to create your first database, define tables, and perform basic data operations.
+
+### Concepts
+
+- [Databases](https://appwrite.io/docs/products/databases/tablesdb/databases.md): Dive deeper into Appwrite Databases and their configuration. Learn how to create, manage, and optimize multiple databases for your application.
+- [Tables](https://appwrite.io/docs/products/databases/tablesdb/tables.md): Organize your data with Appwrite Tables. Explore how to create and configure tables to store and structure your data effectively.
+- [Rows](https://appwrite.io/docs/products/databases/tablesdb/rows.md): Master row management with Appwrite Databases. Learn how to create, update, upsert, and query rows within your tables for dynamic data storage.
+- [Permissions](https://appwrite.io/docs/products/databases/tablesdb/permissions.md): Enhance data security and access control with Appwrite Database Permissions. Learn how to set permissions and access rules for your database tables
+- [Relationships](https://appwrite.io/docs/products/databases/tablesdb/relationships.md): Manage complex data relationships with Appwrite Databases. Discover how to define and work with relationships between rows for interconnected data.
+- [Queries](https://appwrite.io/docs/products/databases/tablesdb/queries.md): Harness the power of querying with Appwrite tablesDB. Discover various query options, filtering, sorting, and advanced querying techniques.
+- [Order](https://appwrite.io/docs/products/databases/tablesdb/order.md): Understand how to do data ordering in Appwrite Databases. Learn how to order and sort your database records for efficient data retrieval.
+- [Operators](https://appwrite.io/docs/products/databases/tablesdb/operators.md): Update multiple fields atomically without fetching the full row. Perform numeric, array, string, and date updates in a single, consistent workflow.
+- [Geo queries](https://appwrite.io/docs/products/databases/tablesdb/geo-queries.md): Query geographic data with distance, intersects, overlaps, and other location-based operations using spatial columns.
+- [Backups](https://appwrite.io/docs/products/databases/tablesdb/backups.md): Learn how to efficiently back up your databases on Appwrite Cloud, ensuring data security and seamless recovery.
+
+### Guides
+
+- [Pagination](https://appwrite.io/docs/products/databases/tablesdb/pagination.md): Implement pagination for large data sets in Appwrite Databases. Explore techniques for splitting and displaying data across multiple pages.
+- [Transactions](https://appwrite.io/docs/products/databases/tablesdb/transactions.md): Stage multiple database operations and commit them atomically. Group changes across databases and tables with ordering, isolation, and conflict detection.
+- [Type generation](https://appwrite.io/docs/products/databases/tablesdb/type-generation.md): Generate types from your Appwrite database schema. Learn how to use the Appwrite CLI to create and manage your types effectively.
+- [Offline sync](https://appwrite.io/docs/products/databases/tablesdb/offline.md): Enable offline synchronization of data between your apps and Appwrite Databases.
+- [Bulk operations](https://appwrite.io/docs/products/databases/tablesdb/bulk-operations.md): Perform bulk operations on rows within your tables for efficient data handling.
+- [Atomic numeric operations](https://appwrite.io/docs/products/databases/tablesdb/atomic-numeric-operations.md): Safely increment and decrement numeric fields without race conditions. Perfect for counters, quotas, inventory, and usage metrics in high-concurrency applications.
+- [CSV imports](https://appwrite.io/docs/products/databases/tablesdb/csv-imports.md): Master row imports with Appwrite's CSV Import feature. Learn how to create rows within your tables by uploading a CSV file.
+- [CSV exports](https://appwrite.io/docs/products/databases/tablesdb/csv-exports.md): Export table data to CSV files from the Console. Share clean datasets with your team without writing custom scripts.
+- [AI suggestions](https://appwrite.io/docs/products/databases/tablesdb/ai-suggestions.md): Use AI suggestions to automatically generate database schemas. Learn how to create tables with recommended columns and indexes based on your table name and context.
+- [Timestamp overrides](https://appwrite.io/docs/products/databases/tablesdb/timestamp-overrides.md): Set custom $createdAt and $updatedAt timestamps for your rows when using server SDKs.
+
+### References
+
+- [TablesDB API](https://appwrite.io/docs/references/cloud/client-web/tablesDB.md)
+- [Legacy API](https://appwrite.io/docs/references/cloud/client-web/databases.md)
+
+## VectorsDB
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/databases/vectorsdb.md): Store vector embeddings and run similarity search with Appwrite VectorsDB to power semantic search, recommendations, and other AI features.
+- [Quick start](https://appwrite.io/docs/products/databases/vectorsdb/quick-start.md): Get started with Appwrite VectorsDB. Follow a step-by-step guide to create your first database, add a collection with a fixed dimension, store embeddings with metadata, and read them back.
+
+### Concepts
+
+- [Databases](https://appwrite.io/docs/products/databases/vectorsdb/databases.md): Dive deeper into Appwrite VectorsDB and database configuration. Learn how to create and manage multiple vector databases for your application.
+- [Collections](https://appwrite.io/docs/products/databases/vectorsdb/collections.md): Organize embeddings with Appwrite VectorsDB collections. Learn how to create collections with a fixed dimension, manage them, and configure permissions.
+- [Documents](https://appwrite.io/docs/products/databases/vectorsdb/documents.md): Create, read, update, and delete documents in Appwrite VectorsDB. Learn how to store embedding vectors and metadata in your collections.
+- [Embeddings](https://appwrite.io/docs/products/databases/vectorsdb/embeddings.md): Generate text embeddings with Appwrite VectorsDB. Turn text into vector embeddings with built-in models and store them in your documents for vector search.
+- [Permissions](https://appwrite.io/docs/products/databases/vectorsdb/permissions.md): Control access to your VectorsDB data with permissions. Learn how to set collection level and document level access rules.
+- [Queries](https://appwrite.io/docs/products/databases/vectorsdb/queries.md): Filter VectorsDB documents by their metadata using the Query class. Discover comparison, string, logical, ordering, and pagination operators.
+- [Order](https://appwrite.io/docs/products/databases/vectorsdb/order.md): Order documents returned by Appwrite VectorsDB. Learn how to sort by system fields like $createdAt and $sequence, and why metadata sub-fields can't be ordered.
+- [Backups](https://appwrite.io/docs/products/databases/vectorsdb/backups.md): Learn how to back up and restore your VectorsDB databases, ensuring data security and seamless recovery.
+
+### Guides
+
+- [Pagination](https://appwrite.io/docs/products/databases/vectorsdb/pagination.md): Implement pagination for large data sets in Appwrite VectorsDB. Explore techniques for splitting and displaying documents across multiple pages.
+- [Vector search](https://appwrite.io/docs/products/databases/vectorsdb/vector-search.md): Run similarity search over your documents with Appwrite VectorsDB. Create an HNSW index on the embeddings field and rank documents by cosine, dot product, or Euclidean distance.
+- [Transactions](https://appwrite.io/docs/products/databases/vectorsdb/transactions.md): Stage multiple VectorsDB operations and commit them atomically. Group changes across databases and collections with ordering, isolation, and conflict detection.
+- [Bulk operations](https://appwrite.io/docs/products/databases/vectorsdb/bulk-operations.md): Perform bulk operations on documents within your collections for efficient data handling in Appwrite VectorsDB.
+- [Timestamp overrides](https://appwrite.io/docs/products/databases/vectorsdb/timestamp-overrides.md): Set custom $createdAt and $updatedAt timestamps for your documents when using server SDKs.
+- [CSV imports](https://appwrite.io/docs/products/databases/vectorsdb/csv-imports.md): Import embeddings into Appwrite VectorsDB by uploading a CSV file. Learn how to format the embeddings and metadata columns for a bulk import.
+- [CSV exports](https://appwrite.io/docs/products/databases/vectorsdb/csv-exports.md): Export VectorsDB documents to a CSV file. Share embeddings and metadata as a portable dataset without writing custom scripts.
+
+## Domains
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/domains.md): Register, transfer, and manage domains with Appwrite. Buy domains, configure DNS, and connect them to Sites, Functions, and APIs from your organization.
+- [Quick start](https://appwrite.io/docs/products/domains/quick-start.md): Register or add your first domain in Appwrite Cloud and verify DNS in a few steps.
+
+### Concepts
+
+- [Registration](https://appwrite.io/docs/products/domains/registration.md): Learn how domain registration works in Appwrite, including Appwrite-registered and external domains, organization scope, and verification.
+- [Renewal](https://appwrite.io/docs/products/domains/renewal.md): Learn how domain expiry, auto-renewal, and billing work for Appwrite-registered domains.
+- [DNS records](https://appwrite.io/docs/products/domains/dns.md): Learn how DNS zones work for organization domains in Appwrite, including record types and locked entries.
+- [DNS presets](https://appwrite.io/docs/products/domains/presets.md): Add email provider DNS records to organization domains with one-click presets in Appwrite Cloud.
+- [Pricing](https://appwrite.io/docs/products/domains/pricing.md): Learn how Appwrite prices domain registration, transfers, and renewals, including premium names and registration periods.
+
+### Guides
+
+- [Register a domain](https://appwrite.io/docs/products/domains/register.md): Search for available domain names and register them through Appwrite with transparent pricing and organization billing.
+- [Transfer a domain](https://appwrite.io/docs/products/domains/transfer.md): Transfer domain registration into or out of Appwrite, including authorization codes, fees, and transfer status.
+- [Add external domain](https://appwrite.io/docs/products/domains/external.md): Add a domain registered with another registrar and delegate DNS to Appwrite without moving registration.
+- [Manage DNS records](https://appwrite.io/docs/products/domains/manage-dns.md): Create, update, import, and filter DNS records for organization domains in Appwrite.
+- [Connect to products](https://appwrite.io/docs/products/domains/connect.md): Connect apex domains and subdomains to Appwrite Sites, Functions, and custom API endpoints. Covers DNS methods, verification, and multi-product layouts.
+- [Change organization](https://appwrite.io/docs/products/domains/change-organization.md): Reassign a domain from one Appwrite organization to another. This is not a registrar transfer.
+- [Delete a domain](https://appwrite.io/docs/products/domains/delete.md): Remove a domain and its DNS zone from Appwrite, including bulk delete from the organization list.
+
+## Firewall
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/firewall.md): Protect project APIs, Functions, and Sites with Appwrite Firewall. Create rules to deny, challenge, rate limit, redirect, or bypass matching traffic from the Console.
+- [Quick start](https://appwrite.io/docs/products/firewall/quick-start.md): Create your first Appwrite Firewall rule and see how it affects project API traffic.
+
+### Concepts
+
+- [Rules](https://appwrite.io/docs/products/firewall/rules.md): Learn what Appwrite Firewall rules contain, how enabled state works, and how plan limits apply.
+- [Actions](https://appwrite.io/docs/products/firewall/actions.md): Learn Firewall actions in Appwrite: deny, bypass, challenge, rate limit, and redirect, including status codes and rate-limit behavior.
+- [Conditions](https://appwrite.io/docs/products/firewall/conditions.md): Learn how Firewall conditions match requests by hostname, path, method, headers, query parameters, IP, client, and location in Appwrite.
+- [Resource scopes](https://appwrite.io/docs/products/firewall/scopes.md): Learn how Appwrite Firewall scopes rules to the project API, a Function, or a Site, and where each scope is enforced.
+- [Priority](https://appwrite.io/docs/products/firewall/priority.md): Learn how Appwrite Firewall evaluates rules by priority and first-match behavior.
+
+### Guides
+
+- [Create a rule](https://appwrite.io/docs/products/firewall/create.md): Create an Appwrite Firewall rule with resource scope, conditions, action, and priority from the Console wizard.
+- [Update a rule](https://appwrite.io/docs/products/firewall/update.md): Change an existing Appwrite Firewall rule's name, scope, conditions, action settings, priority, or enabled state.
+- [Monitor traffic](https://appwrite.io/docs/products/firewall/monitor.md): Use Firewall traffic overview and rule impact preview to understand how Appwrite Firewall handles project requests.
+- [Delete a rule](https://appwrite.io/docs/products/firewall/delete.md): Remove an Appwrite Firewall rule from a project and understand the impact on traffic.
+
+## Functions
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/functions.md): Appwrite Functions is your gateway to scalable applications. Explore our complete guide to building and deploying serverless functions effortlessly.
+- [Quick start](https://appwrite.io/docs/products/functions/quick-start.md): Get started quickly with Appwrite Functions. Follow a step-by-step guide to create your first serverless function, define triggers, and execute code.
+
+### Concepts
+
+- [Functions](https://appwrite.io/docs/products/functions/functions.md): Learn what an Appwrite Function can do for you and how to create a new Appwrite Function
+- [Deployments](https://appwrite.io/docs/products/functions/deployments.md): Efficiently deploy your serverless functions with Appwrite. Explore deployment options, strategies, and best practices for seamless function execution.
+- [Executions](https://appwrite.io/docs/products/functions/executions.md): Learn how Appwrite handles serverless function executions. More specifically, execution status, details and function logging.
+- [Domains](https://appwrite.io/docs/products/functions/domains.md): Execute Appwrite Functions through domains using standard HTTP GET, POST, or other request methods to serve static, JSON, HTML, or other content.
+- [Environment variables](https://appwrite.io/docs/products/functions/environment-variables.md): Set environment variables for your Appwrite Functions to pass constants and secrets at build and runtime.
+- [Runtimes](https://appwrite.io/docs/products/functions/runtimes.md): Choose the right runtime environment for your serverless functions in Appwrite. Explore available runtimes, dependencies, and runtime-specific considerations.
+
+### Guides
+
+- [Templates](https://appwrite.io/docs/products/functions/templates.md): Learn about Appwrite Functions' templates that let you jump start function development to extend your Appwrite APIs.
+- [Develop](https://appwrite.io/docs/products/functions/develop.md): Master serverless function development with Appwrite. Learn how to write and test functions locally, debug code, and optimize for efficient execution.
+- [Develop locally](https://appwrite.io/docs/products/functions/develop-locally.md): Learn to develop Appwrite functions locally.
+- [Deploy from Git](https://appwrite.io/docs/products/functions/deploy-from-git.md): Learn to version and update your Appwrite Functions' code with deployments.
+- [Deploy manually](https://appwrite.io/docs/products/functions/deploy-manually.md): Learn to deploy Appwrite functions manually from the Appwrite CLI or the Appwrite Console.
+- [Execute](https://appwrite.io/docs/products/functions/execute.md): Understand serverless function execution in Appwrite. Explore how triggers, events, and data flow enable dynamic execution of your code.
+
+### References
+
+- [Functions API](https://appwrite.io/docs/references/cloud/client-web/functions.md)
+
+## Messaging
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/messaging.md): Send push notifications, text, or emails to users or groups of users using your app.
+
+### Concepts
+
+- [Providers](https://appwrite.io/docs/products/messaging/providers.md): Learn the different providers that you can use to send messages with Appwrite.
+- [Topics](https://appwrite.io/docs/products/messaging/topics.md): Allow groups of users to subscribe to a common topic and receive the same notifications.
+- [Targets](https://appwrite.io/docs/products/messaging/targets.md): Manage avenues of communication by targetting user's device, email, or phone number in your notification and messages.
+- [Messages](https://appwrite.io/docs/products/messaging/messages.md): Learn about Appwrite messages, the different types of messages, what can be sent in different message types.
+
+### Providers
+
+- [Push with APNs](https://appwrite.io/docs/products/messaging/apns.md): Send push notifications to apps on Apple devices through Apple Push Notification service (APNs) using Appwrite Messaging.
+- [Push with FCM](https://appwrite.io/docs/products/messaging/fcm.md): Send push notifications to Android, Apple, or Web app with Firebase Cloud Messaging (FCM).
+- [Email with Mailgun](https://appwrite.io/docs/products/messaging/mailgun.md): Send emails to your Appwrite users using Mailgun and Appwrite Messaging.
+- [Email with Resend](https://appwrite.io/docs/products/messaging/resend.md): Send emails to your Appwrite users using Resend and Appwrite Messaging.
+- [Email with SendGrid](https://appwrite.io/docs/products/messaging/sendgrid.md): Send emails to your Appwrite users using SendGrid and Appwrite Messaging.
+- [Email with SMTP](https://appwrite.io/docs/products/messaging/smtp.md): Send emails to your Appwrite users using SMTP and Appwrite Messaging.
+- [SMS with Twilio](https://appwrite.io/docs/products/messaging/twilio.md): Send SMS messages to your Appwrite users using Twilio and Appwrite Messaging.
+- [SMS with MSG91](https://appwrite.io/docs/products/messaging/msg91.md): Send SMS messages to your Appwrite users using MSG91 and Appwrite Messaging.
+- [SMS with Telesign](https://appwrite.io/docs/products/messaging/telesign.md): Send SMS messages to your Appwrite users using Telesign and Appwrite Messaging.
+- [SMS with Textmagic](https://appwrite.io/docs/products/messaging/textmagic.md): Send SMS messages to your Appwrite users using Textmagic and Appwrite Messaging.
+- [SMS with Vonage](https://appwrite.io/docs/products/messaging/vonage.md): Send SMS messages to your Appwrite users using Vonage and Appwrite Messaging.
+
+### Guides
+
+- [Send push notifications](https://appwrite.io/docs/products/messaging/send-push-notifications.md): Send push notification to your users using Appwrite Messaging.
+- [Send email messages](https://appwrite.io/docs/products/messaging/send-email-messages.md): Send email messages to your users using Appwrite Messaging.
+- [Send SMS messages](https://appwrite.io/docs/products/messaging/send-sms-messages.md): Send SMS messages to your users using Appwrite Messaging.
+
+### References
+
+- [API reference](https://appwrite.io/docs/references/cloud/client-web/messaging.md)
+
+## Network
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/network.md): Discover Appwrite's network architecture with global regions, edge nodes, and optimized routing. Explore how it ensures low latency, reliable performance, and scalable infrastructure for modern applications.
+
+### Concepts
+
+- [Regions](https://appwrite.io/docs/products/network/regions.md): Learn about Appwrite regions, where core services like databases, auth, functions, sites, and storage are hosted. Understand data sovereignty, fault isolation, and scalability for compliant, high-performance deployments
+- [Edges](https://appwrite.io/docs/products/network/edges.md): Learn about Appwrite edges, where lightweight compute tasks like caching, request routing, and content delivery are handled. Understand how edges enhance performance by bringing operations closer to end-users.
+- [CDN](https://appwrite.io/docs/products/network/cdn.md): Learn about Appwrite's CDN, designed to optimize content delivery with compression, and edge optimization for improved performance and reduced latency.
+- [Endpoints](https://appwrite.io/docs/products/network/endpoints.md): Understand the differences between Appwrite's endpoints, including geo-balanced edges, region-specific services, and custom domains for compute processes.
+
+### Features
+
+- [Custom domains](https://appwrite.io/docs/products/network/custom-domains.md): Customize your Appwrite platform with custom domains. Learn how to set up and configure custom domains to provide a branded experience for your users.
+- [DNS](https://appwrite.io/docs/products/network/dns.md): Learn about Appwrite's DNS service and how to configure domain records for your applications
+- [CAA records](https://appwrite.io/docs/products/network/caa-records.md): Learn what DNS Certification Authority Authorization (CAA) records are, when they are required to use a custom domain with Appwrite, and how to configure one or more of them at your DNS provider.
+- [DDoS mitigation](https://appwrite.io/docs/products/network/ddos.md): Learn how Appwrite protects your applications from Distributed Denial-of-Service (DDoS) attacks with built-in, always-on protection for all Appwrite Cloud plans.
+- [TLS](https://appwrite.io/docs/products/network/tls.md): Learn how Appwrite uses TLS to encrypt data in transit, ensuring secure and private communication between clients and servers.
+- [Firewall](https://appwrite.io/docs/products/firewall.md): Protect project APIs, Functions, and Sites with Appwrite Firewall. Create rules to deny, challenge, rate limit, redirect, or bypass matching traffic from the Console.
+- [Compression](https://appwrite.io/docs/products/network/compression.md): Appwrite is leveraging compression algorithms to both boost the performance of your app and to reduce and optimize…
+- [Caching](https://appwrite.io/docs/products/network/caching.md): Learn how Appwrite uses smart caching strategies at the region, edge, and CDN levels to optimize performance and protect dynamic APIs, with advanced options for enterprise customers.
+
+## Sites
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/sites.md): Appwrite Sites is your gateway to scalable web applications. Explore our complete guide to building and deploying websites effortlessly.
+- [Quick start](https://appwrite.io/docs/products/sites/quick-start.md): Get started quickly with Appwrite Sites. Follow a step-by-step guide to create your first Appwrite Site and deploy a web app.
+
+### Concepts
+
+- [Rendering](https://appwrite.io/docs/products/sites/rendering.md): Explore how sites are rendered on Appwrite Sites.
+- [Deployments](https://appwrite.io/docs/products/sites/deployments.md): Efficiently deploy your web apps with Appwrite. Explore deployment options, strategies, and best practices.
+- [Previews](https://appwrite.io/docs/products/sites/previews.md): Preview site deployments to test changes before promoting to production.
+- [Instant rollbacks](https://appwrite.io/docs/products/sites/instant-rollbacks.md): Safely revert a site to a previous deployment using instant rollbacks.
+- [Logs](https://appwrite.io/docs/products/sites/logs.md): Learn how Appwrite Sites handles logs
+- [Domains](https://appwrite.io/docs/products/sites/domains.md): Discover how domains can be managed for an Appwrite Site
+- [Environment variables](https://appwrite.io/docs/products/sites/environment-variables.md): Set environment variables for your Appwrite Sites to pass constants and secrets at build and runtime.
+- [Frameworks](https://appwrite.io/docs/products/sites/frameworks.md): Discover which frameworks are supported out-of-the-box by Appwrite Sites.
+
+### Guides
+
+- [Templates](https://appwrite.io/docs/products/sites/templates.md): Learn about Appwrite Sites' templates that let you jump start site development.
+- [Develop](https://appwrite.io/docs/products/sites/develop.md): Master site development with Appwrite.
+- [Deploy from Git](https://appwrite.io/docs/products/sites/deploy-from-git.md): Learn to version and update your Appwrite Sites' code with deployments.
+- [Deploy from CLI](https://appwrite.io/docs/products/sites/deploy-from-cli.md): Learn to deploy Appwrite Sites from the Appwrite CLI.
+- [Deploy manually](https://appwrite.io/docs/products/sites/deploy-manually.md): Learn to deploy Appwrite Sites manually via the Appwrite Console.
+
+### References
+
+- [Sites API](https://appwrite.io/docs/references/cloud/server-nodejs/sites.md)
+
+## Storage
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/products/storage.md): Unlock the power of cloud storage with Appwrite Storage. Learn how to store, manage, and retrieve files and media assets securely in your applications.
+- [Quick start](https://appwrite.io/docs/products/storage/quick-start.md): Get started quickly with Appwrite Storage. Follow step-by-step instructions to set up storage, upload files, and integrate cloud storage into your projects
+
+### Concepts
+
+- [Buckets](https://appwrite.io/docs/products/storage/buckets.md): Organize and manage your files effectively with Appwrite Storage Buckets. Explore how to create, configure, and use storage buckets for seamless file organization.
+- [Folders](https://appwrite.io/docs/products/storage/folders.md): Organize files in Appwrite Storage buckets with virtual folders. Learn how to upload files into folders, list files by folder, and browse folders.
+- [Permissions](https://appwrite.io/docs/products/storage/permissions.md): Enhance data security and control with Appwrite Storage Permissions. Learn how to set access rules, permissions, and restrictions for your stored files.
+- [File tokens](https://appwrite.io/docs/products/storage/file-tokens.md): Easily share files with external users using file tokens.
+
+### Guides
+
+- [Upload and download](https://appwrite.io/docs/products/storage/upload-download.md): Effortlessly upload and download files with Appwrite Storage. Learn how to handle file uploads, manage file versions, and ensure secure downloads in your applications.
+- [Image transformations](https://appwrite.io/docs/products/storage/images.md): Optimize image storage and processing with Appwrite. Explore image resizing, transformations, and manipulation to deliver rich media experiences in your apps.
+- [S3 API](https://appwrite.io/docs/products/storage/s3.md): Connect any S3-compatible client, SDK, or tool to Appwrite Storage. Configure credentials once, then manage buckets, objects, and multipart uploads over the S3 API.
+
+### References
+
+- [Storage API](https://appwrite.io/docs/references/cloud/client-web/storage.md)
+
+## Quick start
+
+### Web app
+
+- [TanStack Start](https://appwrite.io/docs/quick-starts/tanstack-start.md): Build TanStack Start apps with the Appwrite React library. Add server-rendered authentication via file-route handlers and server functions.
+- [Next.js](https://appwrite.io/docs/quick-starts/nextjs.md): Build Next.js apps with the Appwrite React library. Add server-rendered authentication, sign-in, sign-up, and user state without writing the SSR plumbing yourself.
+- [React](https://appwrite.io/docs/quick-starts/react.md): Build React apps with the Appwrite React library and add authentication, sign-in, sign-up, and user state in a few lines.
+- [Vue.js](https://appwrite.io/docs/quick-starts/vue.md): Build Vue.js apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [SvelteKit](https://appwrite.io/docs/quick-starts/sveltekit.md): Learn how to use Appwrite to add authentication, user management, file storage, and more to your SvelteKit apps.
+- [Angular](https://appwrite.io/docs/quick-starts/angular.md): Learn how to use Appwrite to add authentication, user management, file storage, and more to your Angular apps.
+- [Nuxt](https://appwrite.io/docs/quick-starts/nuxt.md): Build Nuxt.js apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [Refine](https://appwrite.io/docs/quick-starts/refine.md): Build Refine apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [Solid](https://appwrite.io/docs/quick-starts/solid.md): Build Solid apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [Astro](https://appwrite.io/docs/quick-starts/astro.md): Learn how to use Appwrite to add authentication, user management, file storage, and more to your Astro apps.
+- [Web](https://appwrite.io/docs/quick-starts/web.md): Build JavaScript or Typescript web apps with Appwrite. Add authentication, user management, file storage, and more. Read our guide to get started!
+
+### Mobile and native
+
+- [Flutter](https://appwrite.io/docs/quick-starts/flutter.md): Build Flutter apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [React Native](https://appwrite.io/docs/quick-starts/react-native.md): Discover how to leverage Appwrite's powerful backend to help you build React Native apps for iOS, Android and other native platforms.
+- [Android](https://appwrite.io/docs/quick-starts/android.md): Get started with Appwrite on Android and learn how to build secure and scalable apps using our powerful backend.
+- [Apple](https://appwrite.io/docs/quick-starts/apple.md): Build iOS apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+
+### Server
+
+- [Node.js](https://appwrite.io/docs/quick-starts/node.md): Dive into our step-by-step guide on integrating Appwrite with your Node.js server backend application. Get your backend up and running quickly with this tutorial.
+- [Python](https://appwrite.io/docs/quick-starts/python.md): Learn to get started with server integrations with Appwrite Python SDK.
+- [.NET](https://appwrite.io/docs/quick-starts/dotnet.md): Learn to get started with server integrations with Appwrite .NET SDK.
+- [PHP](https://appwrite.io/docs/quick-starts/php.md): Dive into our step-by-step guide on integrating Appwrite with your PHP server backend application. Get your backend up and running quickly with this tutorial.
+- [Dart](https://appwrite.io/docs/quick-starts/dart.md): Build Flutter apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+- [Ruby](https://appwrite.io/docs/quick-starts/ruby.md): Dive into our step-by-step guide on integrating Appwrite with your Ruby server backend application. Get your backend up and running quickly with this tutorial.
+- [Deno](https://appwrite.io/docs/quick-starts/deno.md): Dive into our step-by-step guide on integrating Appwrite with your Deno server backend application. Get your backend up and running quickly with this tutorial.
+- [Go](https://appwrite.io/docs/quick-starts/go.md): Integrating Appwrite with your Go backend application is a quick and simple process. Get your backend up and running with our step-by-step guide.
+- [Swift](https://appwrite.io/docs/quick-starts/swift.md): Learn to get started with server integrations with Appwrite Swift SDK.
+- [Kotlin](https://appwrite.io/docs/quick-starts/kotlin.md): Learn to get started with server integrations with Appwrite Kotlin SDK.
+- [Rust](https://appwrite.io/docs/quick-starts/rust.md): Learn to get started with server integrations with Appwrite Rust SDK.
+
+## AI
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/tooling/ai.md): Discover Appwrite's AI tooling ecosystem. Build with AI-powered development tools, integrate AI capabilities into your apps, and leverage documentation designed for AI consumption.
+- [Quick start prompts](https://appwrite.io/docs/tooling/ai/quickstart-prompts.md): Use AI assistants and code-generation tools to build Appwrite-powered applications faster using quick start prompts.
+
+### Tooling
+
+- [Appwrite Agent](https://appwrite.io/docs/products/agent.md): Chat with the Appwrite Agent in the Console to inspect your project, explain issues, suggest next steps, and run approved actions.
+- [MCP servers](https://appwrite.io/docs/tooling/ai/mcp-servers.md): Enable LLMs and code-generation tools to interact with your Appwrite project
+- [Agent skills](https://appwrite.io/docs/tooling/ai/skills.md): Install Appwrite skills to give AI agents pre-built knowledge of Appwrite SDKs and services for your preferred language.
+- [AGENTS.md](https://appwrite.io/docs/tooling/ai/agents-md.md): Generate an AGENTS.md file to give AI agents project-specific context about Appwrite SDKs, APIs, and services.
+- [Appwrite Arena](https://appwrite.io/docs/tooling/ai/arena.md): An open-source benchmark that evaluates how well AI models understand Appwrite's services, SDKs, and APIs.
+
+### IDEs
+
+- [Claude Code](https://appwrite.io/docs/tooling/ai/agents/claude-code.md): Learn how to use Claude Code with Appwrite through the Appwrite plugin, quick start prompts, and MCP servers for AI-assisted development.
+- [Codex](https://appwrite.io/docs/tooling/ai/agents/codex.md): Learn how to use Codex with Appwrite through the Appwrite plugin, quick start prompts, and MCP servers for AI-assisted development.
+- [Cursor](https://appwrite.io/docs/tooling/ai/agents/cursor.md): Learn how to use Cursor with Appwrite through the Appwrite plugin, quick start prompts, and MCP servers for AI-assisted development.
+- [VS Code](https://appwrite.io/docs/tooling/ai/agents/vscode.md): Learn how you can use Appwrite with VS Code and GitHub Copilot for AI-assisted development. Get started quickly with pre-built prompts and connect to Appwrite MCP servers for deeper integration.
+- [Zed](https://appwrite.io/docs/tooling/ai/agents/zed.md): Learn how you can use Zed with Appwrite by adding Appwrite MCP servers and installing Appwrite skills for AI-assisted development.
+- [OpenCode](https://appwrite.io/docs/tooling/ai/agents/opencode.md): Learn how you can add the Appwrite MCP servers to OpenCode to interact with both the Appwrite API and documentation.
+- [Google Antigravity](https://appwrite.io/docs/tooling/ai/agents/antigravity.md): Learn how you can add the Appwrite MCP servers to Agent Manager in Google Antigravity to interact with both the Appwrite API and documentation.
+
+### Vibe coding
+
+- [Claude Desktop](https://appwrite.io/docs/tooling/ai/vibe-coding/claude-desktop.md): Learn how to use Claude Desktop with Appwrite through quick start prompts and MCP servers for AI-assisted development.
+- [Lovable](https://appwrite.io/docs/tooling/ai/vibe-coding/lovable.md): Learn how to connect the Appwrite docs MCP server to Lovable for AI-assisted development with access to Appwrite documentation.
+- [Emergent](https://appwrite.io/docs/tooling/ai/vibe-coding/emergent.md): Learn how to connect Appwrite MCP servers to Emergent for AI-assisted development with access to the Appwrite API and documentation.
+- [Bolt](https://appwrite.io/docs/tooling/ai/vibe-coding/bolt.md): Learn how to connect the Appwrite docs MCP server to Bolt for AI-assisted development with access to Appwrite documentation.
+- [Zenflow](https://appwrite.io/docs/tooling/ai/vibe-coding/zenflow.md): Learn how to add the Appwrite MCP servers to agents in Zenflow to interact with both the Appwrite API and documentation.
+
+### Guides
+
+- [AI in Functions](https://appwrite.io/docs/tooling/ai/ai-in-functions.md): Learn how to integrate AI capabilities into your Appwrite Functions using the Vercel AI SDK.
+- [Vector DB and embeddings](https://appwrite.io/docs/tooling/ai/vector-db-and-embeddings.md): Using vector databases and embeddings with Appwrite.
+- [Persistent agents with Realtime](https://appwrite.io/docs/tooling/ai/persistent-agents-with-realtime.md): Building persistent AI agents using Appwrite Realtime.
+
+## Command Center
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/tooling/command-center.md): Appwrite Command Center enhances developer experience with AI, keyboard shortcuts, and context-aware search for efficient navigation and task execution.
+- [Shortcuts](https://appwrite.io/docs/tooling/command-center/shortcuts.md): Learn to navigate the Appwrite Console efficiently and effectively with your keyboard
+
+## CLI
+
+### Guides
+
+- [Installation](https://appwrite.io/docs/tooling/command-line/installation.md): Get started with the Appwrite CLI by following the installation guide. Learn how to set up and configure the CLI on your development environment.
+- [Commands](https://appwrite.io/docs/tooling/command-line/commands.md): Learn about Appwrites CLI and the powerful, feature complete commands to manage Appwrite's auth, databases, functions, storage, and more.
+- [Non interactive](https://appwrite.io/docs/tooling/command-line/non-interactive.md): Deploy changes to Appwrite projects to migrate databases and tables schema, functions, teams, buckets, and more.
+- [Generate SDK](https://appwrite.io/docs/tooling/command-line/generate.md): Generate a type-safe SDK for your Appwrite project using the Command-Line Tool (CLI). Automatically create typed helpers based on your database schema.
+
+### Deployments
+
+- [Tables](https://appwrite.io/docs/tooling/command-line/tables.md): Efficiently deploy your Appwrite tables using the Command-Line Tool (CLI).
+- [Functions](https://appwrite.io/docs/tooling/command-line/functions.md): Efficiently deploy your Appwrite functions using the Command-Line Tool (CLI).
+- [Sites](https://appwrite.io/docs/tooling/command-line/sites.md): Efficiently deploy your Appwrite Sites using the Command-Line Tool (CLI).
+- [Teams](https://appwrite.io/docs/tooling/command-line/teams.md): Efficiently deploy your Appwrite teams using the Command-Line Tool (CLI).
+- [Topics](https://appwrite.io/docs/tooling/command-line/topics.md): Efficiently deploy your Appwrite topics using the Command-Line Tool (CLI).
+- [Buckets](https://appwrite.io/docs/tooling/command-line/buckets.md): Efficiently deploy your Appwrite buckets using the Command-Line Tool (CLI).
+
+## Terraform provider
+
+### Getting started
+
+- [Overview](https://appwrite.io/docs/tooling/terraform.md): Manage Appwrite infrastructure as code with the official Terraform provider. Works with Appwrite Cloud and Community Edition.
+- [Configuration](https://appwrite.io/docs/tooling/terraform/provider.md): Configure the Appwrite Terraform provider for Cloud or Community Edition using endpoints, API keys, and optional environment variables.
+
+### Resources
+
+- [Databases](https://appwrite.io/docs/tooling/terraform/resources/databases.md): Use Terraform to manage Appwrite TablesDB databases, tables, columns, indexes, and rows with the official Appwrite provider.
+- [Storage](https://appwrite.io/docs/tooling/terraform/resources/storage.md): Manage Appwrite Storage buckets and files with the Terraform provider, including file limits, extensions, compression, and security options.
+- [Messaging](https://appwrite.io/docs/tooling/terraform/resources/messaging.md): Configure Appwrite Messaging providers, topics, and subscribers with Terraform for email, SMS, and push delivery.
+- [Auth](https://appwrite.io/docs/tooling/terraform/resources/auth.md): Manage Appwrite users and teams with the Terraform provider.
+- [Functions](https://appwrite.io/docs/tooling/terraform/resources/functions.md): Manage Appwrite Functions, environment variables, and deployments with Terraform.
+- [Sites](https://appwrite.io/docs/tooling/terraform/resources/sites.md): Manage Appwrite Sites, environment variables, and deployments with Terraform.
+- [Webhooks](https://appwrite.io/docs/tooling/terraform/resources/webhooks.md): Register Appwrite webhooks with Terraform to deliver events to your HTTP endpoints.
+- [Backups](https://appwrite.io/docs/tooling/terraform/resources/backups.md): Configure Appwrite backup policies with Terraform where your plan supports them.
+
+## Android
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/android/step-1.md): Learn to build an Android app with no backend code using an Appwrite backend.
+- [Create app](https://appwrite.io/docs/tutorials/android/step-2.md): Create a Android app project using Appwrite.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/android/step-3.md): Initialize Appwrite in your Android project.
+- [Add authentication](https://appwrite.io/docs/tutorials/android/step-4.md): Add Appwrite authentication to you Android app.
+- [Add MainActivity](https://appwrite.io/docs/tutorials/android/step-5.md): Add navigation to your Android application.
+- [Add database](https://appwrite.io/docs/tutorials/android/step-6.md): Add databases and queries to store user data in you Android application.
+- [Create ideas page](https://appwrite.io/docs/tutorials/android/step-7.md): Add pagination and ordering to you Android application powered by Appwrite Databases.
+- [Next steps](https://appwrite.io/docs/tutorials/android/step-8.md): View your Android project powered by Appwrite authentication and databases.
+
+## Apple
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/apple/step-1.md): Learn to build an Apple app with no backend code using an Appwrite backend.
+
+## Astro SSR
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-1.md): Add SSR authentication to your Astro app with Appwrite
+- [Create project](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-2.md): Add authentication to a Astro project using Appwrite.
+- [Initialize SDK](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-3.md): Add authentication to a Astro project using Appwrite.
+- [Add a server hook](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-4.md): Add authentication to a Astro project using Appwrite.
+- [Create sign up page](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-5.md): Add authentication to a Astro project using Appwrite.
+- [Create account page](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-6.md): Add authentication to a Astro project using Appwrite.
+- [OAuth authentication with SSR](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-7.md): Add authentication to a Astro project using Appwrite.
+- [All set](https://appwrite.io/docs/tutorials/astro-ssr-auth/step-8.md): Add authentication to a Astro project using Appwrite.
+
+## Flutter
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/flutter/step-1.md): Learn to build an Flutter app with no backend code using an Appwrite backend.
+
+## Next.js
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/nextjs/step-1.md): Learn to build an idea tracker app with Appwrite and Next.js with authentication, databases and tables, queries, pagination, and file storage.
+- [Create app](https://appwrite.io/docs/tutorials/nextjs/step-2.md): Create a Next.js app project and integrate with Appwrite
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/nextjs/step-3.md): Import and configure a project with Appwrite Cloud.
+- [Add authentication](https://appwrite.io/docs/tutorials/nextjs/step-4.md): Add authentication to your Next.js application using Appwrite Web SDK
+- [Add navigation](https://appwrite.io/docs/tutorials/nextjs/step-5.md): Add navigation to your app.
+- [Add database](https://appwrite.io/docs/tutorials/nextjs/step-6.md): Add databases and queries for ideas in your Next.js project.
+- [Ideas page](https://appwrite.io/docs/tutorials/nextjs/step-7.md): Add ideas from Appwrite database in your app.
+- [Next steps](https://appwrite.io/docs/tutorials/nextjs/step-8.md): View your Next.js app built on Appwrite Cloud.
+
+## Next.js SSR
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-1.md): Add SSR authentication to your Next.js app with Appwrite
+- [Create project](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-2.md): Add authentication to a Next.js project using Appwrite.
+- [Initialize SDK](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-3.md): Add authentication to a Next.js project using Appwrite.
+- [Get the logged in user](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-4.md): Add authentication to a Next.js project using Appwrite.
+- [Create sign up page](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-5.md): Add authentication to a Next.js project using Appwrite.
+- [Create account page](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-6.md): Add authentication to a Next.js project using Appwrite.
+- [OAuth authentication with SSR](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-7.md): Add authentication to a Next.js project using Appwrite.
+- [All set](https://appwrite.io/docs/tutorials/nextjs-ssr-auth/step-8.md): Add authentication to a Next.js project using Appwrite.
+
+## Nuxt
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/nuxt/step-1.md): Learn to build an idea tracker app with Appwrite and Nuxt with authentication, databases and tables, queries, pagination, and file storage.
+- [Create app](https://appwrite.io/docs/tutorials/nuxt/step-2.md): Create a Nuxt app project and integrate with Appwrite
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/nuxt/step-3.md): Import and configure a project with Appwrite Cloud.
+- [Add authentication](https://appwrite.io/docs/tutorials/nuxt/step-4.md): Add authentication to your Nuxt application using Appwrite Web SDK
+- [Add navigation](https://appwrite.io/docs/tutorials/nuxt/step-5.md): Add navigation to your app.
+- [Add database](https://appwrite.io/docs/tutorials/nuxt/step-6.md): Add databases and queries for ideas in your Nuxt project.
+- [Ideas page](https://appwrite.io/docs/tutorials/nuxt/step-7.md): Add ideas from Appwrite database in your app.
+- [Next steps](https://appwrite.io/docs/tutorials/nuxt/step-8.md): View your Nuxt app built on Appwrite Cloud.
+
+## Nuxt SSR
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-1.md): Add SSR authentication to your Nuxt app with Appwrite
+- [Create project](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-2.md): Add authentication to a Nuxt project using Appwrite.
+- [Initialize SDK](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-3.md): Add authentication to a Nuxt project using Appwrite.
+- [Add server middleware](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-4.md): Add authentication to a Nuxt project using Appwrite.
+- [Create sign up page](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-5.md): Add authentication to a Nuxt project using Appwrite.
+- [Create account page](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-6.md): Add authentication to a Nuxt project using Appwrite.
+- [OAuth authentication with SSR](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-7.md): Add authentication to a Nuxt project using Appwrite.
+- [Enable the sign up and account pages](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-8.md): Add authentication to a Nuxt project using Appwrite.
+- [All set](https://appwrite.io/docs/tutorials/nuxt-ssr-auth/step-9.md): Add authentication to a Nuxt project using Appwrite.
+
+## React
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/react/step-1.md): Learn to build a React app with no backend code using an Appwrite backend.
+- [Create app](https://appwrite.io/docs/tutorials/react/step-2.md): Create a React app project and integrate with Appwrite.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/react/step-3.md): Import and initialize Appwrite for your react application.
+- [Add authentication](https://appwrite.io/docs/tutorials/react/step-4.md): Add authentication to your react application.
+- [Add navigation](https://appwrite.io/docs/tutorials/react/step-5.md): Add navigation to your React applicating using Appwrite.
+- [Add database](https://appwrite.io/docs/tutorials/react/step-6.md): Add a database to your React application using Appwrite Web SDK.
+- [Create ideas page](https://appwrite.io/docs/tutorials/react/step-7.md): Add database queries and pagination using Appwrite in your React application.
+- [Next steps](https://appwrite.io/docs/tutorials/react/step-8.md): Run your React project built with Appwrite
+
+## React Native
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/react-native/step-1.md): Learn to build a React Native app with no backend code using an Appwrite backend.
+- [Create app](https://appwrite.io/docs/tutorials/react-native/step-2.md): Create a React Native app project and integrate with Appwrite.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/react-native/step-3.md): Import and initialize Appwrite for your React Native application.
+- [Add authentication](https://appwrite.io/docs/tutorials/react-native/step-4.md): Add authentication to your React Native application.
+- [Add routing](https://appwrite.io/docs/tutorials/react-native/step-5.md): Add routing to your React Native applicating using Appwrite.
+- [Add database](https://appwrite.io/docs/tutorials/react-native/step-6.md): Connect a database to your React Native application using Appwrite Web SDK.
+- [Create ideas page](https://appwrite.io/docs/tutorials/react-native/step-7.md): Add database queries and pagination using Appwrite in your React Native application.
+- [Next steps](https://appwrite.io/docs/tutorials/react-native/step-8.md): Run your React Native project built with Appwrite
+
+## Refine
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/refine/step-1.md): Learn to build a Refine app with no backend code using an Appwrite backend.
+- [Create app](https://appwrite.io/docs/tutorials/refine/step-2.md): Create a Refine app project and integrate with Appwrite.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/refine/step-3.md): Import and initialize Appwrite for your react application.
+- [Add authentication](https://appwrite.io/docs/tutorials/refine/step-4.md): Add authentication to your Refine application.
+- [Add database](https://appwrite.io/docs/tutorials/refine/step-5.md): Add a database to your React application using Appwrite Web SDK.
+- [Create CRUD pages](https://appwrite.io/docs/tutorials/refine/step-6.md): Add database queries and CRUD pages using Appwrite in your Refine application.
+- [Next steps](https://appwrite.io/docs/tutorials/refine/step-7.md): Run your Refine project built with Appwrite
+
+## Stripe
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/subscriptions-with-stripe/step-1.md): Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+- [Setup Stripe](https://appwrite.io/docs/tutorials/subscriptions-with-stripe/step-2.md): Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+- [Create function](https://appwrite.io/docs/tutorials/subscriptions-with-stripe/step-3.md): Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+- [Configure web platform](https://appwrite.io/docs/tutorials/subscriptions-with-stripe/step-4.md): Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+- [All set](https://appwrite.io/docs/tutorials/subscriptions-with-stripe/step-5.md): Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+
+## SvelteKit
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/sveltekit/step-1.md): Build a SvelteKit project using Appwrite.
+- [Create app](https://appwrite.io/docs/tutorials/sveltekit/step-2.md): Create a SvelteKit app project using Appwrite.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/sveltekit/step-3.md): Initialize Appwrite in your SvelteKit project.
+- [Add authentication](https://appwrite.io/docs/tutorials/sveltekit/step-4.md): Add Appwrite authentication to you Svelte app using your Svelte store.
+- [Add navigation](https://appwrite.io/docs/tutorials/sveltekit/step-5.md): Add navigation to your SvelteKit application with Appwrite authentication.
+- [Add database](https://appwrite.io/docs/tutorials/sveltekit/step-6.md): Add databases and queries to store user data in you SvelteKit project.
+- [Create ideas page](https://appwrite.io/docs/tutorials/sveltekit/step-7.md): Add pagining and ordering to you SvelteKit application powered by Appwrite Databases.
+
+## SvelteKit
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-1.md): Add Authentication to a SvelteKit project using Appwrite.
+- [Create project](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-2.md): Add Authentication to a SvelteKit project using Appwrite.
+- [Initialize SDK](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-3.md): Add Authentication to a SvelteKit project using Appwrite.
+- [Check if logged in](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-4.md): Add Authentication to a SvelteKit project using Appwrite.
+- [Create login page](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-5.md): Add Authentication to a SvelteKit project using Appwrite.
+- [Create signup page](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-6.md): Add Authentication to a SvelteKit project using Appwrite.
+- [All set](https://appwrite.io/docs/tutorials/sveltekit-csr-auth/step-7.md): Add Authentication to a SvelteKit project using Appwrite.
+
+## SvelteKit SSR
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-1.md): Add SSR authentication to your SvelteKit app with Appwrite
+- [Create project](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-2.md): Add authentication to a SvelteKit project using Appwrite.
+- [Initialize SDK](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-3.md): Add authentication to a SvelteKit project using Appwrite.
+- [Add a server hook](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-4.md): Add authentication to a SvelteKit project using Appwrite.
+- [Create sign up page](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-5.md): Add authentication to a SvelteKit project using Appwrite.
+- [Create account page](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-6.md): Add authentication to a SvelteKit project using Appwrite.
+- [OAuth authentication with SSR](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-7.md): Add authentication to a SvelteKit project using Appwrite.
+- [All set](https://appwrite.io/docs/tutorials/sveltekit-ssr-auth/step-8.md): Add authentication to a SvelteKit project using Appwrite.
+
+## Vue
+
+### Steps
+
+- [Introduction](https://appwrite.io/docs/tutorials/vue/step-1.md): Learn to build an idea tracker app with Appwrite and Vue with authentication, databases and tables, queries, pagination, and file storage.
+- [Create app](https://appwrite.io/docs/tutorials/vue/step-2.md): Create and app with Appwrite Cloud and Vue.js.
+- [Set up Appwrite](https://appwrite.io/docs/tutorials/vue/step-3.md): Import and configure a project with Appwrite Cloud and Vue.js.
+- [Add authentication](https://appwrite.io/docs/tutorials/vue/step-4.md): Add authentication to your Vue application using Appwrite Web SDK.
+- [Add navigation](https://appwrite.io/docs/tutorials/vue/step-5.md): Add navigation to your Vue.js app with Appwrite authentication and pinia stores.
+- [Add database](https://appwrite.io/docs/tutorials/vue/step-6.md): Add data storage to your Vue.js project powered by Appwrite Cloud databases.
+- [Create ideas page](https://appwrite.io/docs/tutorials/vue/step-7.md): Add data queries and pagination to your Vue.js project powered by Appwrite Cloud databases.
+- [Next steps](https://appwrite.io/docs/tutorials/vue/step-8.md): View your Vue.js app build on Appwrite Cloud.
+
+## Other
+- [Partners](https://appwrite.io/docs/partners.md): Integrate Appwrite into your platform. Provision organizations, projects, and domains with OAuth connect, organization API keys, and Console SDK APIs.
+- [Architecture](https://appwrite.io/docs/partners/architecture.md): Understand how partner platforms connect to Appwrite with OAuth connect, organization API keys, and Console versus project SDKs.
+- [Domains API](https://appwrite.io/docs/partners/domains.md): Manage organization domains and DNS from your partner platform using the Console Domains API.
+- [Marketplaces](https://appwrite.io/docs/partners/guides/marketplaces.md): Build an OAuth app marketplace with the Apps API and OAuth connect. Publish integrations, let organizations install them, and manage grants on your platform.
+- [Multi-tenancy](https://appwrite.io/docs/partners/guides/multi-tenancy.md): Design patterns for multi-tenant partner platforms on Appwrite with isolated projects, org API keys, and optional OAuth connect.
+- [Provisioning](https://appwrite.io/docs/partners/guides/provisioning.md): End-to-end guide for provisioning an Appwrite project per customer from a partner platform using organization API keys.
+- [Proxy](https://appwrite.io/docs/partners/proxy.md): Proxy Appwrite Console and project APIs from your partner platform using organization and project credentials.
+- [Quick start](https://appwrite.io/docs/partners/quick-start.md): Choose an Appwrite partner integration model and take your first steps with OAuth connect or organization API keys.
+- [Usage](https://appwrite.io/docs/partners/usage.md): Read organization usage, plan limits, and billing aggregation with the Partners Usage API for metering and reselling Appwrite.
+- [Integrating TensorFlow with Appwrite](https://appwrite.io/docs/products/ai/integrations/tensorflow.md): Learn how to integrate TensorFlow into your Appwrite project.
+- [Video processing](https://appwrite.io/docs/products/ai/video-processing.md): Learn about the basics of video processing, the most popular tasks and applications of video processing with ML and how we can leverage Appwrite to build video processing enabled applications.
+- [Define the scopes](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-2.md): Add tasks.read and tasks.write to your OAuth2 server's scopes.
+- [Request the scopes](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-3.md): Ask for the task scopes during authorization and let the user grant each one individually.
+- [Validate access tokens](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-4.md): Verify incoming access tokens against your project's JWKS and read their scopes.
+- [Protect the API route](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-5.md): Serve tasks only to tokens that carry tasks.read.
+- [Call the API from Vantage](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-6.md): Read tasks with the granted access token and add a task composer that lives or dies by its scope.
+- [Run the flow](https://appwrite.io/docs/products/auth/oauth-server/custom-scopes/step-7.md): Grant the read scope, watch a write get refused, then grant the write scope and watch it succeed.
+- [Enable the OAuth2 server](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-2.md): Turn on the OAuth2 server on your Appwrite project and register the client app.
+- [Create the apps](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-3.md): Scaffold the two TanStack Start apps and wire up their environment.
+- [Add Sign in with your product](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-4.md): Build the consumer's sign-in button and the redirect that starts the OAuth flow.
+- [Build the consent screen](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-5.md): Host the consent screen where your users sign in and approve access.
+- [Exchange the code for tokens](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-6.md): Handle the callback, exchange the authorization code for tokens on the server, and sign the user in.
+- [Run the flow](https://appwrite.io/docs/products/auth/oauth-server/sign-in-with-your-product/step-7.md): Start both apps and sign in with your product end to end.
+- [Atomic numeric operations](https://appwrite.io/docs/products/databases/tablesdb/legacy/atomic-numeric-operations.md): Safely increment and decrement numeric fields without race conditions. Perfect for counters, quotas, inventory, and usage metrics in high-concurrency applications.
+- [Bulk operations](https://appwrite.io/docs/products/databases/tablesdb/legacy/bulk-operations.md): Perform bulk operations on documents within your collections for efficient data handling.
+- [Collections](https://appwrite.io/docs/products/databases/tablesdb/legacy/collections.md): Organize your data with Appwrite Collections. Explore how to create and configure collections to store and structure your data effectively.
+- [Databases](https://appwrite.io/docs/products/databases/tablesdb/legacy/databases.md): Dive deeper into Appwrite Databases and their configuration. Learn how to create, manage, and optimize multiple databases for your application.
+- [Documents](https://appwrite.io/docs/products/databases/tablesdb/legacy/documents.md): Master document management with Appwrite Databases. Learn how to create, update, and query documents within your collections for dynamic data storage.
+- [Order](https://appwrite.io/docs/products/databases/tablesdb/legacy/order.md): Understand how to do data ordering in Appwrite Databases. Learn how to order and sort your database records for efficient data retrieval."
+- [Pagination](https://appwrite.io/docs/products/databases/tablesdb/legacy/pagination.md): Implement pagination for large data sets in Appwrite Databases. Explore techniques for splitting and displaying data across multiple pages.
+- [Database permissions](https://appwrite.io/docs/products/databases/tablesdb/legacy/permissions.md): Enhance data security and access control with Appwrite Database Permissions. Learn how to set permissions and access rules for your database collections
+- [Queries](https://appwrite.io/docs/products/databases/tablesdb/legacy/queries.md): Harness the power of querying with Appwrite Databases. Discover various query options, filtering, sorting, and advanced querying techniques.
+- [Start with Databases](https://appwrite.io/docs/products/databases/tablesdb/legacy/quick-start.md): Get started with Appwrite Databases. Follow a step-by-step guide to create your first database, define collections, and perform basic data operations.
+- [Relationships](https://appwrite.io/docs/products/databases/tablesdb/legacy/relationships.md): Manage complex data relationships with Appwrite Databases. Discover how to define and work with relationships between documents for interconnected data.
+- [Type generation](https://appwrite.io/docs/products/databases/tablesdb/legacy/type-generation.md): Generate types from your Appwrite database schema. Learn how to use the Appwrite CLI to create and manage your types effectively.
+- [Examples](https://appwrite.io/docs/products/functions/examples.md): Accelerate your serverless development with Appwrite Functions examples. Access a library of code samples and use cases to jumpstart your projects.
+- [Migrating from Vercel to Appwrite Sites](https://appwrite.io/docs/products/sites/migrations/vercel.md): A step-by-step guide to migrate your web applications from Vercel to Appwrite Sites.
+- [Deploy an Angular app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/angular.md): Learn how to setup and deploy Angular apps on Appwrite Sites.
+- [Deploy a Astro app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/astro.md): Learn how to setup and deploy Astro apps on Appwrite Sites.
+- [Deploy a Flutter Web app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/flutter.md): Learn how to setup and deploy Flutter Web apps on Appwrite Sites.
+- [Deploy a Next.js app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/nextjs.md): Learn how to setup and deploy Next.js apps on Appwrite Sites.
+- [Deploy a Nuxt app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/nuxt.md): Learn how to setup and deploy Nuxt apps on Appwrite Sites.
+- [Deploy a React app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/react.md): Learn how to setup and deploy React apps on Appwrite Sites.
+- [Deploy a React Native app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/react-native.md): Learn how to setup and deploy React Native apps on Appwrite Sites.
+- [Deploy a Remix app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/remix.md): Learn how to setup and deploy Remix apps on Appwrite Sites.
+- [Deploy a SvelteKit app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/sveltekit.md): Learn how to setup and deploy SvelteKit apps on Appwrite Sites.
+- [Deploy a TanStack Start app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/tanstack-start.md): Learn how to setup and deploy TanStack Start apps on Appwrite Sites.
+- [Deploy a Vanilla JS app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/vanilla.md): Learn how to setup and deploy Vanilla JS apps on Appwrite Sites.
+- [Deploy a Vue.js app to Appwrite Sites](https://appwrite.io/docs/products/sites/quick-start/vue.md): Learn how to setup and deploy Vue.js apps on Appwrite Sites.
+- [Server Side Rendering](https://appwrite.io/docs/products/sites/rendering/ssr.md): Learn how to host SSR web apps on Appwrite Sites.
+- [Static](https://appwrite.io/docs/products/sites/rendering/static.md): Learn how to host static web apps on Appwrite Sites.
+- [Start with Android (Java)](https://appwrite.io/docs/quick-starts/android-java.md): Get started with Appwrite on Android using Java and learn how to build secure and scalable apps using our powerful backend.
+- [Start with Qwik](https://appwrite.io/docs/quick-starts/qwik.md): Learn how to use Appwrite to add authentication, user management, file storage, and more to your Qwik apps.
+- [API reference](https://appwrite.io/docs/references.md): Here's a complete API reference for Appwrite SDK, REST, and GraphQL APIs. Learn how to use Authentication, Databases, Storage, and other Appwrite APIs.
+- [Quick start](https://appwrite.io/docs/references/quick-start.md): Configure the Appwrite SDKs and take the necessary steps to start using Appwrite.
+- [SDKs](https://appwrite.io/docs/sdks.md): Get started with Appwrite SDKs and learn how to use them to add authentication, user management, file storage, and more to your apps.
+- [Windsurf](https://appwrite.io/docs/tooling/ai/agents/windsurf.md): Learn how you can use Windsurf Editor with Appwrite by leveraging MCP servers and quick start prompts to build applications faster.
+- [Appwrite Agent](https://appwrite.io/docs/tooling/ai/assistant.md): Chat with the Appwrite Agent in the Console to inspect your project, explain issues, and take approved actions.
+- [Docs as Markdown](https://appwrite.io/docs/tooling/ai/docs-as-markdown.md): Access Appwrite documentation as Markdown for AI consumption.
+- [MCP server for Appwrite API](https://appwrite.io/docs/tooling/ai/mcp-servers/api.md): Enable LLMs and code-generation tools to interact with the Appwrite API
+- [MCP server for Appwrite docs](https://appwrite.io/docs/tooling/ai/mcp-servers/docs.md): Enable LLMs and code-generation tools to interact with the Appwrite docs
+- [Android (Java)](https://appwrite.io/docs/tooling/ai/quickstart-prompts/android-java.md): Quickstart prompt for integrating Appwrite with Android using Java.
+- [Android (Kotlin)](https://appwrite.io/docs/tooling/ai/quickstart-prompts/android-kotlin.md): Quickstart prompt for integrating Appwrite with Android using Kotlin.
+- [Angular](https://appwrite.io/docs/tooling/ai/quickstart-prompts/angular.md): Quickstart prompt for integrating Appwrite with Angular.
+- [Apple (Swift)](https://appwrite.io/docs/tooling/ai/quickstart-prompts/apple.md): Quickstart prompt for integrating Appwrite with Apple platforms using Swift.
+- [Dart](https://appwrite.io/docs/tooling/ai/quickstart-prompts/dart.md): Quickstart prompt for integrating Appwrite with Dart.
+- [Deno](https://appwrite.io/docs/tooling/ai/quickstart-prompts/deno.md): Quickstart prompt for integrating Appwrite with Deno.
+- [.NET](https://appwrite.io/docs/tooling/ai/quickstart-prompts/dotnet.md): Quickstart prompt for integrating Appwrite with .NET.
+- [Flutter](https://appwrite.io/docs/tooling/ai/quickstart-prompts/flutter.md): Quickstart prompt for integrating Appwrite with Flutter.
+- [Go](https://appwrite.io/docs/tooling/ai/quickstart-prompts/go.md): Quickstart prompt for integrating Appwrite with Go.
+- [Kotlin](https://appwrite.io/docs/tooling/ai/quickstart-prompts/kotlin.md): Quickstart prompt for integrating Appwrite with Kotlin.
+- [Next.js](https://appwrite.io/docs/tooling/ai/quickstart-prompts/nextjs.md): Quickstart prompt for integrating Appwrite with Next.js.
+- [Node.js](https://appwrite.io/docs/tooling/ai/quickstart-prompts/node.md): Quickstart prompt for integrating Appwrite with Node.js.
+- [Nuxt](https://appwrite.io/docs/tooling/ai/quickstart-prompts/nuxt.md): Quickstart prompt for integrating Appwrite with Nuxt.
+- [PHP](https://appwrite.io/docs/tooling/ai/quickstart-prompts/php.md): Quickstart prompt for integrating Appwrite with PHP.
+- [Python](https://appwrite.io/docs/tooling/ai/quickstart-prompts/python.md): Quickstart prompt for integrating Appwrite with Python.
+- [React](https://appwrite.io/docs/tooling/ai/quickstart-prompts/react.md): Quickstart prompt for integrating Appwrite with React.
+- [React Native](https://appwrite.io/docs/tooling/ai/quickstart-prompts/react-native.md): Quickstart prompt for integrating Appwrite with React Native.
+- [Refine](https://appwrite.io/docs/tooling/ai/quickstart-prompts/refine.md): Quickstart prompt for integrating Appwrite with Refine.
+- [Ruby](https://appwrite.io/docs/tooling/ai/quickstart-prompts/ruby.md): Quickstart prompt for integrating Appwrite with Ruby.
+- [Rust](https://appwrite.io/docs/tooling/ai/quickstart-prompts/rust.md): Quickstart prompt for integrating Appwrite with Rust.
+- [Solid](https://appwrite.io/docs/tooling/ai/quickstart-prompts/solid.md): Quickstart prompt for integrating Appwrite with Solid.
+- [SvelteKit](https://appwrite.io/docs/tooling/ai/quickstart-prompts/sveltekit.md): Quickstart prompt for integrating Appwrite with SvelteKit.
+- [Swift](https://appwrite.io/docs/tooling/ai/quickstart-prompts/swift.md): Quickstart prompt for integrating Appwrite with Swift.
+- [TanStack Start](https://appwrite.io/docs/tooling/ai/quickstart-prompts/tanstack-start.md): Quickstart prompt for integrating Appwrite with TanStack Start.
+- [Vue](https://appwrite.io/docs/tooling/ai/quickstart-prompts/vue.md): Quickstart prompt for integrating Appwrite with Vue.
+- [Web](https://appwrite.io/docs/tooling/ai/quickstart-prompts/web.md): Quickstart prompt for integrating Appwrite with Web.
+- [Responsible AI](https://appwrite.io/docs/tooling/ai/responsible-ai.md): Best practices for responsible AI usage with Appwrite. Learn how to protect user data, secure API keys, and build transparent AI-powered applications.
+- [The Appwriter](https://appwrite.io/docs/tooling/appwriter.md): Learn about the custom Appwriter mechanical keyboard and its specifications
+- [Arena](https://appwrite.io/docs/tooling/arena.md): An open-source benchmark that evaluates how well AI models understand Appwrite's services, SDKs, and APIs.

@@ -1,0 +1,2 @@
+var security_default = "---\nlayout: article\ntitle: Security\ndescription: Prioritize security in your applications with Appwrite. Discover best practices, security features, and guidelines to protect user data and ensure authentication integrity.\n---\n\nAppwrite provides many security features to keep both your Appwrite project and your user's information secure.\n\n{% partial file=\"auth-security.md\" /%}\n";
+export { security_default as default };

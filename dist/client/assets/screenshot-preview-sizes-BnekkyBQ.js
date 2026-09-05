@@ -1,0 +1,1 @@
+const e=`screenshots`,t=184,n=104,r=640,i=360,a=960,o=540;export{a,o as i,i as n,n as o,r,t as s,e as t};

@@ -1,0 +1,1 @@
+import{Bit as e,FE as t,PE as n,iD as r,k0 as i,r0 as a}from"./main-uHRHOkhm.js";function o(o){let{plan:s}=a(o),{data:c}=e(r(o,0,1,void 0,void 0,n,t)),l=c?.total??0,u=s?.domains??0;return{currentCount:l,limit:u,isAtLimit:u>0&&l>=u,plan:s,planName:i({planName:s?.name??null,planId:s?.$id})}}export{o as t};

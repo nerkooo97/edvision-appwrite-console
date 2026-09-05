@@ -1,0 +1,1 @@
+import{lat as e,nat as t}from"./main-uHRHOkhm.js";import"./scroll-area-BAv_Fw8-.js";import{t as n}from"./View-BNxkIBfN.js";var r=e(t());function i(){return(0,r.jsx)(`div`,{className:`fixed inset-0 z-[9997] flex flex-col bg-background`,children:(0,r.jsx)(n,{})})}export{i as component};

@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`rect`,{width:`18`,height:`18`,x:`3`,y:`3`,rx:`2`,key:`afitv7`}],[`path`,{d:`M8 16V8l4 4 4-4v8`,key:`141u4e`}]],n=e(`square-m`,t);export{t as __iconNode,n as default};

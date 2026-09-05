@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`path`,{d:`m17 11-5-5-5 5`,key:`e8nh98`}],[`path`,{d:`m17 18-5-5-5 5`,key:`2avn1x`}]],n=e(`chevrons-up`,t);export{t as __iconNode,n as default};

@@ -1,0 +1,2 @@
+var authentication_default = "---\nlayout: article\ntitle: Authentication\ndescription: Learn how Appwrite protects your passwords and helps users pick better passwords.\n---\n\nAppwrite helps you implement secure authentication in your applications by using password hashing to protect passwords in storage.\nAppwrite also provides tools to help users pick better passwords, making them harder to break.\n\n{% partial file=\"auth-security.md\" /%}";
+export { authentication_default as default };

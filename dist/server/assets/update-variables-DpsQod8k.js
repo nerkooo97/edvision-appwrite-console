@@ -1,0 +1,2 @@
+var update_variables_default = "{% info title=\"Applying changes\" %}\n\nAfter editing your `docker-compose.yml` or `.env` files, you will need to recreate your Appwrite stack by running the following compose command in your terminal.\n\n```sh\ndocker compose up -d\n```\n\nYou can verify if the changes have been successfully applied by running this command:\n\n```sh\ndocker compose exec appwrite vars\n```\n\n{% /info %}\n";
+export { update_variables_default as default };

@@ -1,0 +1,1 @@
+import{T_ as e,lat as t,nat as n}from"./main-uHRHOkhm.js";var r=t(n());function i({}){let{currentUser:t}=e();return(0,r.jsxs)(`div`,{children:[`Protected `,t?.email]})}export{i as component};

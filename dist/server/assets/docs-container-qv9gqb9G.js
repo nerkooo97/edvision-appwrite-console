@@ -1,0 +1,12 @@
+const DOCS_CONTAINER = "@container/docs";
+const docsContentPaddingX = "px-4 @[480px]:px-6";
+const docsSectionPaddingY = "py-12 @[640px]:py-16";
+const docsPreviewSectionPaddingY = "py-6 @[640px]:py-8";
+const docsPreviewPrimaryTitleClass = "font-aeonik-pro text-balance text-[20px] font-normal leading-tight tracking-tight text-foreground @[480px]:text-[22px]";
+const docsPreviewSectionTitleClass = "font-aeonik-pro text-balance text-[15px] font-normal leading-tight tracking-tight text-foreground @[480px]:text-[16px]";
+const docsGridTwoCol = "grid-cols-1 @[560px]:grid-cols-2";
+const docsGridThreeCol = "grid-cols-1 @[560px]:grid-cols-2 @[900px]:grid-cols-3";
+const docsGridFourCol = "grid-cols-1 @[560px]:grid-cols-2 @[1080px]:grid-cols-4";
+const docsGridQuickStarts = "grid-cols-1 @[560px]:grid-cols-2 @[900px]:grid-cols-3 @[1080px]:grid-cols-4";
+const docsGridFiveCol = "grid-cols-1 @[560px]:grid-cols-2 @[900px]:grid-cols-3 @[1080px]:grid-cols-5";
+export { docsGridQuickStarts as a, docsPreviewPrimaryTitleClass as c, docsSectionPaddingY as d, docsGridFourCol as i, docsPreviewSectionPaddingY as l, docsContentPaddingX as n, docsGridThreeCol as o, docsGridFiveCol as r, docsGridTwoCol as s, DOCS_CONTAINER as t, docsPreviewSectionTitleClass as u };

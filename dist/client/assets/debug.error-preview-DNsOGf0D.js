@@ -1,0 +1,2 @@
+import{lat as e,lo as t,nat as n}from"./main-uHRHOkhm.js";var r=e(n()),i=Error(`Something went wrong while loading this resource. (Debug preview)`);function a(){return(0,r.jsx)(t,{error:i,info:{componentStack:` at ErrorPreviewPage (debug.error-preview.tsx)
+    at RouterProvider`},reset:()=>{},preview:!0})}export{a as component};

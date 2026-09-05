@@ -1,0 +1,1 @@
+import{l4 as e,lat as t,nat as n}from"./main-uHRHOkhm.js";import"./card-BWTX5GGH.js";import{t as r}from"./OAuth2RelayCard-DTJ3NKSm.js";var i=t(n());function a(){return(0,i.jsx)(r,{title:e()(`You're now logged in`)})}export{a as component};

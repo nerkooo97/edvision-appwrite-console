@@ -1,0 +1,1 @@
+import{et as e,lat as t,nat as n}from"./main-uHRHOkhm.js";import"./RefreshButton-Du1-Lmp6.js";import"./ServiceHeader-DlqKRX7Q.js";import"./ResourceTitleSwitcher-BxK4yHaD.js";import"./MessagingProviderIcon-AeDCxrsb.js";import{t as r}from"./View-CBaiAa_u.js";var i=t(n());function a(){return(0,i.jsx)(r,{initialProvider:e.useLoaderData()?.provider})}export{a as component};

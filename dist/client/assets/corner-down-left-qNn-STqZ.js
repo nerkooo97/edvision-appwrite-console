@@ -1,0 +1,1 @@
+import{n as e,t}from"./corner-down-left-DF5L92BH.js";export{e as __iconNode,t as default};

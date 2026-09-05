@@ -1,0 +1,1 @@
+import{itt as e}from"./main-uHRHOkhm.js";var t=[[`path`,{d:`M10 5h11`,key:`1hkqpe`}],[`path`,{d:`M10 12h11`,key:`6m4ad9`}],[`path`,{d:`M10 19h11`,key:`14g2nv`}],[`path`,{d:`m3 10 3-3-3-3`,key:`i7pm08`}],[`path`,{d:`m3 20 3-3-3-3`,key:`20gx1n`}]],n=e(`list-collapse`,t);export{t as n,n as t};

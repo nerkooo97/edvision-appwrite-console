@@ -1,0 +1,1 @@
+import{_a as e,aat as t,lat as n}from"./main-uHRHOkhm.js";var r=n(t());function i(){return(0,r.useEffect)(()=>{e()},[]),null}export{i as t};

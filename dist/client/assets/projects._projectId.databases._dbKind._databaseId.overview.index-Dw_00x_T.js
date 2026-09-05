@@ -1,0 +1,1 @@
+import{A as e,Yit as t,aat as n,lat as r,zJ as i}from"./main-uHRHOkhm.js";var a=r(n());function o(){let{projectId:n,dbKind:r,databaseId:o}=e.useParams(),s=t();return(0,a.useEffect)(()=>{s({...i(r).dataGrid({projectId:n,dbKind:r,databaseId:o,resourceId:`-`}),replace:!0})},[s,n,r,o]),null}export{o as component};

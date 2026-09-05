@@ -1,0 +1,1 @@
+function e(e){let t=e.replace(/:\d+$/,``);return`${t===`localhost`||t.endsWith(`.localhost`)||t===`127.0.0.1`||t===`::1`?`http`:`https`}://${e}`}export{e as t};

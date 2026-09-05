@@ -1,0 +1,1 @@
+import{aat as e,lat as t}from"./main-uHRHOkhm.js";var n=t(e());function r(e,t){let[r,i]=(0,n.useState)(e);return(0,n.useEffect)(()=>{let n=setTimeout(()=>i(e),t);return()=>clearTimeout(n)},[e,t]),r}export{r as t};

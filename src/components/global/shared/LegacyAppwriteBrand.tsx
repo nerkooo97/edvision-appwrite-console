@@ -1,0 +1,33 @@
+import { cn } from '@/lib/utils'
+import { LEGACY_ICON_SRC, LEGACY_LOGO_SRC } from '@/lib/legacy-theme-assets'
+
+export function LegacyAppwriteIcon({
+  className,
+}: {
+  className?: string
+}) {
+  return (
+    <img
+      src="/logo-icon.png"
+      alt=""
+      aria-hidden
+      className={cn('h-6 w-auto shrink-0 object-contain', className)}
+    />
+  )
+}
+
+export function LegacyAppwriteLogo({
+  className,
+  'aria-label': ariaLabel = 'Logo',
+}: {
+  className?: string
+  'aria-label'?: string
+}) {
+  return (
+    <img
+      src="/cropped-logo5.png"
+      alt={ariaLabel}
+      className={cn('h-6 w-auto shrink-0 object-contain', className)}
+    />
+  )
+}

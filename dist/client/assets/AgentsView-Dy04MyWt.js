@@ -1,0 +1,1 @@
+import{Wu as e,lat as t,nat as n}from"./main-uHRHOkhm.js";var r=t(n());function i({agentId:t}={}){return(0,r.jsx)(e,{variant:`page`,section:`agents`,routeAgentId:t})}export{i as t};

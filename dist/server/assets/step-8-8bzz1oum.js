@@ -1,0 +1,2 @@
+var step_8_default = "---\nlayout: tutorial\ntitle: Next steps\ndescription: View your Nuxt app built on Appwrite Cloud.\nstep: 8\n---\n\n## Test your project {% #test-project %}\nRun your project with `npm run dev` and open the URL shown by the NPM command in your browser.\n\nHead to the [Appwrite Console](https://cloud.appwrite.io/console) to see the new users and follow their interactions.\n";
+export { step_8_default as default };

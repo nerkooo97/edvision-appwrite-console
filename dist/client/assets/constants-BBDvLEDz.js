@@ -1,0 +1,1 @@
+const e=`/generator/cover`,t=`/generator/diagram`;export{t as n,e as t};

@@ -1,0 +1,539 @@
+import {
+  HeadContent,
+  Scripts,
+  ScriptOnce,
+  createRootRouteWithContext,
+} from '@tanstack/react-router'
+import appCss from '../styles.css?url'
+import {
+  getRuntimeConfig,
+  getRuntimeConfigScript,
+} from '@/lib/runtime-config'
+import { getSsrClientIpScript } from '@/lib/ssr-client-ip'
+
+import type { QueryClient } from '@tanstack/react-query'
+import { useQueryClient } from '@tanstack/react-query'
+import { useEffect, useState } from 'react'
+import { Toaster } from '@/components/ui/sonner'
+import { ThemeProvider, useTheme } from 'next-themes'
+import {
+  applyFaviconHref,
+  applyFaviconVariant,
+  getDefaultFaviconVariant,
+} from '@/lib/favicon'
+import {
+  isLegacyTheme,
+  LEGACY_ICON_SRC,
+} from '@/lib/legacy-theme-assets'
+import { AgentChatProvider } from '@/components/global/providers/AgentChat'
+import { DocsPreviewProvider } from '@/components/global/providers/DocsPreviewProvider'
+import { DocsContentHmrRefresh } from '@/lib/docs/DocsContentHmrRefresh'
+import '@/lib/docs/docs-content-hmr-runtime'
+import {
+  ConsoleRightPane,
+  ConsoleRightPaneProvider,
+} from '@/components/global/providers/ConsoleRightPane'
+import { DebugMenu } from '@/components/global/providers/DebugMenu'
+import { PromoBannerProvider } from '@/components/global/providers/PromoBanner'
+import { CookieConsentProvider } from '@/components/global/providers/CookieConsent'
+import { CommunitySupportPromptProvider } from '@/components/global/providers/CommunitySupportPromptProvider'
+import { DebugModeProvider } from '@/components/global/providers/DebugMode'
+import { ScreenshotModeProvider } from '@/components/global/providers/ScreenshotMode'
+import { AnalyticsSessionPropsSync } from '@/components/global/providers/AnalyticsSessionPropsSync'
+import { SentryContextProvider } from '@/components/global/providers/SentryContext'
+import { RootShellCatchBoundary } from '@/components/global/providers/RootShellCatchBoundary'
+import { NavigationHistoryProvider } from '@/components/global/providers/NavigationHistoryProvider'
+import { ErrorComponent } from '@/components/error/Component'
+import { RecentResourcesProvider } from '@/components/global/providers/RecentResourcesProvider'
+import {
+  FullscreenLoader,
+} from '@/components/ui/loader'
+import { useInitialLoader } from '@/hooks/use-initial-loader'
+import { useConsoleProfile } from '@/hooks/use-console-profile'
+import { useAuth } from '@/components/global/auth/RequireAuth'
+import {
+  WebsiteAccessGate,
+  WEBSITE_ACCESS_BOOT_SCRIPT,
+} from '@/components/global/auth/WebsiteAccessGate'
+import { STALE_CHUNK_BOOT_SCRIPT } from '@/lib/stale-chunk-error'
+import { getStatusBannerParts } from '@/lib/cloud-status-copy'
+import { useDebugOverrides } from '@/lib/debug-overrides'
+import {
+  applyScreenshotModeOrganizationName,
+  isScreenshotModeActive,
+} from '@/lib/screenshot-mode'
+import { PageDirectionProvider } from '@/lib/layout/page-direction'
+import { isOperatorAccount, type OperatorAccount } from '@/lib/operator-account'
+import { useAppwriteCloudStatus } from '@/lib/react-query/hooks'
+import { consoleProjectScopesQueryOptions } from '@/lib/react-query/hooks/console-project-scopes'
+import { DynamicFavicon } from '@/components/global/shared/DynamicFavicon'
+import { UploadWarning } from '@/components/global/providers/UploadWarning'
+import { GlobalUploadProgress } from '@/components/global/shared/GlobalUploadProgress'
+import { useLocation, useMatches } from '@tanstack/react-router'
+import { useGlobalAnalyticsTracker } from '@/hooks/use-global-analytics-tracker'
+import {
+  getConsoleRouteIds,
+  withPageTitleNameContext,
+} from '@/lib/utils/page-title'
+import { getRequestSiteOrigin } from '@/lib/marketing/site-origin'
+import { getSeoRobotsMetaTags } from '@/lib/seo/indexing'
+import { I18nProvider } from '@/lib/i18n'
+import { MarketingSiteLayoutGate } from '@/lib/marketing/MarketingSiteLayoutGate'
+import { DevConstructionStripe } from '@/components/global/layout/DevConstructionStripe'
+
+interface MyRouterContext {
+  queryClient: QueryClient
+}
+
+/**
+ * Inline script that runs before first paint (via ScriptOnce). Applies theme
+ * class to <html> so the initial loader respects user choice first, then
+ * system preference. Must match next-themes storageKey ("theme") and logic.
+ */
+const THEME_SCRIPT = `(function(){
+  try {
+    var t = localStorage.getItem('theme') || 'system';
+    if (t === 'classic') { localStorage.setItem('theme', 'dark'); t = 'dark'; }
+    var r = t === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : t;
+    var e = document.documentElement;
+    ['light','dark','system','crazy','stealth','classic','premium','high-contrast','barbie','nineties','legacy'].forEach(function(c){e.classList.remove(c);});
+    e.classList.add(r);
+    try {
+      var langPref = localStorage.getItem('debug:language');
+      var resolvedLang = 'bs';
+      var dir = 'ltr';
+      if (langPref === 'he') {
+        resolvedLang = 'he';
+        dir = 'rtl';
+      } else if (langPref === 'ja') {
+        resolvedLang = 'ja';
+      } else if (langPref === 'en') {
+        resolvedLang = 'en';
+      } else {
+        var pd = localStorage.getItem('debug:pageDirection');
+        if (pd === 'rtl') dir = 'rtl';
+      }
+      e.setAttribute('lang', resolvedLang);
+      e.setAttribute('dir', dir);
+    } catch (e3) {}
+  } catch (e) {}
+})()`
+
+const scripts: React.DetailedHTMLProps<
+  React.ScriptHTMLAttributes<HTMLScriptElement>,
+  HTMLScriptElement
+>[] = []
+
+/**
+ * Font preloads aligned with VITE_CONSOLE_PROFILE. Cloud uses Aeonik (appwrite/website);
+ * self-hosted uses Inter from appwrite/console static fonts. Debug menu profile override
+ * is client-only, so preloads follow the build env until the user refreshes after switching.
+ */
+function getHeadFontPreloads() {
+  const raw = getRuntimeConfig()
+    .consoleProfile.toLowerCase()
+    .trim()
+    .replace(/\s+/g, '-')
+  if (raw === 'self-hosted') {
+    return [
+      {
+        rel: 'preload' as const,
+        href: '/fonts/inter/inter-v8-latin-regular.woff2',
+        as: 'font' as const,
+        type: 'font/woff2',
+        crossOrigin: 'anonymous' as const,
+      },
+      {
+        rel: 'preload' as const,
+        href: '/fonts/inter/inter-v8-latin-600.woff2',
+        as: 'font' as const,
+        type: 'font/woff2',
+        crossOrigin: 'anonymous' as const,
+      },
+    ]
+  }
+  return [
+    {
+      rel: 'preload' as const,
+      href: '/fonts/aeonik-pro/AeonikPro-Regular.woff2',
+      as: 'font' as const,
+      type: 'font/woff2',
+      crossOrigin: 'anonymous' as const,
+    },
+    {
+      rel: 'preload' as const,
+      href: '/fonts/noto-sans-hebrew/noto-sans-hebrew-hebrew-400.woff2',
+      as: 'font' as const,
+      type: 'font/woff2',
+      crossOrigin: 'anonymous' as const,
+    },
+    {
+      rel: 'preload' as const,
+      href: '/fonts/inter/inter-latin-400-normal.woff2',
+      as: 'font' as const,
+      type: 'font/woff2',
+      crossOrigin: 'anonymous' as const,
+    },
+  ]
+}
+
+export const Route = createRootRouteWithContext<MyRouterContext>()({
+  loader: async () => {
+    // Client-side authentication is handled by RequireAuth component
+    // Return null for currentUser - it will be fetched client-side
+    return {
+      currentUser: null,
+    }
+  },
+  // Explicit root error UI; reporting goes through router defaultOnCatch
+  // (route onCatch typing omits errorInfo, so we do not override it here).
+  errorComponent: ({ error, info, reset }) => (
+    <ErrorComponent error={error} info={info} reset={reset} />
+  ),
+  head: () => ({
+    meta: [
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover',
+      },
+      {
+        title: 'Appwrite Console',
+      },
+      ...getSeoRobotsMetaTags(getRequestSiteOrigin()),
+    ],
+    links: [
+      {
+        rel: 'icon',
+        href: '/logo-icon.png',
+        type: 'image/png',
+      },
+      ...(import.meta.env.DEV
+        ? []
+        : [
+            {
+              rel: 'shortcut icon' as const,
+              href: '/favicon.ico',
+            },
+          ]),
+      {
+        rel: 'apple-touch-icon',
+        href: '/apple-touch-icon.png',
+        sizes: '180x180',
+      },
+      ...getHeadFontPreloads(),
+    ],
+    scripts: [...scripts],
+  }),
+
+  shellComponent: RootDocument,
+})
+
+/** Remap removed debug theme so old localStorage values do not leave stale classes. */
+function MigrateRemovedThemes() {
+  const { theme, setTheme } = useTheme()
+  useEffect(() => {
+    if (theme === 'classic') setTheme('dark')
+  }, [theme, setTheme])
+  return null
+}
+
+/** Swap favicon to the classic Appwrite mark while the legacy debug theme is active. */
+function LegacyThemeFavicon() {
+  const { theme, resolvedTheme } = useTheme()
+
+  useEffect(() => {
+    if (isLegacyTheme(theme, resolvedTheme)) {
+      applyFaviconHref(LEGACY_ICON_SRC, {
+        cacheBust: false,
+        source: 'legacy-theme',
+        reason: 'Legacy debug theme is active',
+        variant: 'default',
+      })
+      return
+    }
+
+    const variant = getDefaultFaviconVariant()
+    applyFaviconVariant(variant, {
+      cacheBust: false,
+      source: 'default',
+      reason: 'Idle (default favicon)',
+    })
+  }, [theme, resolvedTheme])
+
+  return null
+}
+
+/**
+ * Renders ThemeProvider only after client mount. next-themes uses React context
+ * in a way that can fail during SSR (renderToPipeableStream) with "Cannot read
+ * properties of null (reading 'useContext')". Deferring to client avoids this.
+ */
+function ClientThemeProvider({ children }: { children: React.ReactNode }) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  if (!mounted) {
+    return <>{children}</>
+  }
+  return (
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+      themes={[
+        'light',
+        'dark',
+        'system',
+        'crazy',
+        'stealth',
+        'premium',
+        'high-contrast',
+        'barbie',
+        'nineties',
+        'legacy',
+      ]}
+    >
+      <MigrateRemovedThemes />
+      <LegacyThemeFavicon />
+      {children}
+    </ThemeProvider>
+  )
+}
+
+/**
+ * Renders children only after client mount. Use for components that call
+ * next-themes useTheme() so they never run during SSR (avoids useContext crash).
+ */
+function ClientOnly({ children }: { children: React.ReactNode }) {
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+  if (!mounted) return null
+  return <>{children}</>
+}
+
+function ContextualDocumentTitle() {
+  const location = useLocation()
+  const queryClient = useQueryClient()
+  const [previousContextPart, setPreviousContextPart] = useState<
+    string | undefined
+  >()
+  useMatches()
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+
+    const { projectId, orgId } = getConsoleRouteIds(location.pathname)
+    const project = projectId
+      ? (queryClient.getQueryData(['project', projectId]) as
+          | { name?: string }
+          | undefined)
+      : undefined
+    const organization = orgId
+      ? (queryClient.getQueryData(['organization', orgId]) as
+          | { name?: string }
+          | undefined) ??
+        (
+          queryClient.getQueryData(['organizations', 'console']) as
+            | { teams?: { $id?: string; name?: string }[] }
+            | undefined
+        )?.teams?.find((team) => team.$id === orgId)
+      : undefined
+    const organizationName = organization?.name
+      ? isScreenshotModeActive()
+        ? applyScreenshotModeOrganizationName({ name: organization.name }).name
+        : organization.name
+      : undefined
+    const contextPart = project?.name ?? organizationName
+
+    const nextTitle = withPageTitleNameContext(document.title, {
+      projectName: project?.name,
+      organizationName,
+      previousContextPart,
+    })
+    if (document.title !== nextTitle) {
+      document.title = nextTitle
+    }
+    if (previousContextPart !== contextPart) {
+      setPreviousContextPart(contextPart)
+    }
+  })
+
+  return null
+}
+
+/** When true, upload progress is shown by the project layout unified panel instead of root */
+function isProjectRoute(pathname: string) {
+  const parts = pathname.split('/').filter(Boolean)
+  return parts[0] === 'projects' && parts.length >= 2
+}
+
+/** Full-viewport shell: construction stripe spans main column + right pane. */
+function RootAppShell({ children }: { children: React.ReactNode }) {
+  return (
+    <div className="root-container flex w-full min-w-0 flex-col overflow-hidden">
+      <DevConstructionStripe />
+      <div className="flex min-h-0 min-w-0 flex-1 overflow-hidden">
+        <div className="root-scroll-container h-full min-h-0 flex-1 overflow-hidden">
+          <MarketingSiteLayoutGate>{children}</MarketingSiteLayoutGate>
+        </div>
+        <ConsoleRightPane />
+      </div>
+    </div>
+  )
+}
+
+const STATUS_PAGE_URL = 'https://status.appwrite.online'
+
+function RootDocument({ children }: { children: React.ReactNode }) {
+  const queryClient = useQueryClient()
+  const { isLoading, skipStaticLoader } = useInitialLoader()
+  const [clientMounted, setClientMounted] = useState(false)
+  const location = useLocation()
+  const { isCloud, features } = useConsoleProfile()
+  const { account, isFetched } = useAuth()
+  const cloudStatusEnabled = isCloud && features.systemStatus
+  const showCloudStatusToOperator =
+    isFetched && isOperatorAccount(account as OperatorAccount)
+  const { data: statusData, isSuccess: isStatusSuccess } =
+    useAppwriteCloudStatus(cloudStatusEnabled && showCloudStatusToOperator)
+  const { showFullscreenLoader } = useDebugOverrides()
+  useGlobalAnalyticsTracker()
+
+  useEffect(() => {
+    setClientMounted(true)
+  }, [])
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+    void queryClient
+      .prefetchQuery(consoleProjectScopesQueryOptions())
+      .catch(() => {})
+  }, [queryClient])
+
+  const isLoaderVisible = isLoading || showFullscreenLoader
+
+  const statusBanner =
+    cloudStatusEnabled &&
+    showCloudStatusToOperator &&
+    isLoaderVisible &&
+    isStatusSuccess &&
+    statusData?.consoleAlertState &&
+    statusData.consoleAlertState !== 'operational'
+      ? {
+          ...getStatusBannerParts(statusData.consoleAlertState, {
+            reportTitle: statusData.activeReport?.title,
+            startsAt: statusData.activeReport?.startsAt,
+            endsAt: statusData.activeReport?.endsAt,
+            regionsLine: statusData.regionsLine,
+          }),
+          href: STATUS_PAGE_URL,
+          state: statusData.consoleAlertState,
+        }
+      : undefined
+
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta charSet="utf-8" />
+        <link rel="stylesheet" href={appCss} />
+        <HeadContent />
+      </head>
+      <body suppressHydrationWarning>
+        {/* Publish runtime config to the browser before the app bundle runs.
+            Must precede <Scripts /> so module-level config reads see it. */}
+        <ScriptOnce>{getRuntimeConfigScript()}</ScriptOnce>
+        <ScriptOnce>{getSsrClientIpScript()}</ScriptOnce>
+        <ScriptOnce>{THEME_SCRIPT}</ScriptOnce>
+        <ScriptOnce>{WEBSITE_ACCESS_BOOT_SCRIPT}</ScriptOnce>
+        {/* Must run before <Scripts /> so entry/main chunk 404s after deploy can
+            auto-recover before the app module graph (and router listeners) load. */}
+        <ScriptOnce>{STALE_CHUNK_BOOT_SCRIPT}</ScriptOnce>
+        <DynamicFavicon />
+        <UploadWarning />
+        <ContextualDocumentTitle />
+        {/* I18n outside ClientThemeProvider so FullscreenLoader is not remounted when
+            ThemeProvider attaches after client mount (that remount reset the 1.5s spinner). */}
+        <I18nProvider>
+          {/* Branded loader (logo + 2.0) from first paint; fade out only when data is ready.
+              Kept outside ClientThemeProvider remount boundaries. Always mount when the
+              debug override is on (auth/marketing pages set skipStaticLoader). */}
+          <FullscreenLoader
+            isVisible={
+              showFullscreenLoader ||
+              (!skipStaticLoader && (clientMounted ? isLoading : true))
+            }
+            statusBanner={
+              clientMounted && isLoaderVisible ? statusBanner : undefined
+            }
+          />
+          <ClientThemeProvider>
+            <WebsiteAccessGate>
+              <AnalyticsSessionPropsSync />
+              <PageDirectionProvider>
+                <CookieConsentProvider>
+                  <NavigationHistoryProvider>
+                    <RecentResourcesProvider>
+                      <SentryContextProvider>
+                        <RootShellCatchBoundary>
+                          <DebugModeProvider>
+                            <ScreenshotModeProvider>
+                              <ConsoleRightPaneProvider>
+                              {/* Mount when the agent profile feature is on so the
+                                  header agent button never no-ops. */}
+                              {features.agent ? (
+                                <AgentChatProvider>
+                                  <DocsPreviewProvider>
+                                    <PromoBannerProvider>
+                                      <RootAppShell>{children}</RootAppShell>
+                                      <ClientOnly>
+                                        <DebugMenu />
+                                      </ClientOnly>
+                                    </PromoBannerProvider>
+                                  </DocsPreviewProvider>
+                                </AgentChatProvider>
+                              ) : (
+                                <DocsPreviewProvider>
+                                  <PromoBannerProvider>
+                                    <RootAppShell>{children}</RootAppShell>
+                                    <ClientOnly>
+                                      <DebugMenu />
+                                    </ClientOnly>
+                                  </PromoBannerProvider>
+                                </DocsPreviewProvider>
+                              )}
+                              <ClientOnly>
+                                <CommunitySupportPromptProvider />
+                              </ClientOnly>
+                              </ConsoleRightPaneProvider>
+                            </ScreenshotModeProvider>
+                          </DebugModeProvider>
+                        </RootShellCatchBoundary>
+                      </SentryContextProvider>
+                      <ClientOnly>
+                        <DocsContentHmrRefresh />
+                      </ClientOnly>
+                      <ClientOnly>
+                        <Toaster />
+                      </ClientOnly>
+                      <ClientOnly>
+                        {!isProjectRoute(location.pathname) && (
+                          <GlobalUploadProgress />
+                        )}
+                      </ClientOnly>
+                    </RecentResourcesProvider>
+                  </NavigationHistoryProvider>
+                </CookieConsentProvider>
+              </PageDirectionProvider>
+            </WebsiteAccessGate>
+          </ClientThemeProvider>
+        </I18nProvider>
+        <Scripts />
+      </body>
+    </html>
+  )
+}

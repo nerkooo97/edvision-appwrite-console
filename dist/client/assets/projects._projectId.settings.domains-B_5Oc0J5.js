@@ -1,0 +1,1 @@
+import{Kit as e,lat as t,nat as n}from"./main-uHRHOkhm.js";var r=t(n());function i(){return(0,r.jsx)(e,{})}export{i as component};
