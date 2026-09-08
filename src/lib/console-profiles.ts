@@ -197,8 +197,8 @@ export const CONSOLE_PROFILES: Record<ConsoleProfileId, ConsoleProfile> = {
       init: false,
       marketing: false,
       partnersDocs: false,
-      multiTenancy: false,
-      orgRoles: false,
+      multiTenancy: true,
+      orgRoles: true,
       systemStatus: false,
       accountMfa: false,
       accountIdentities: false,
@@ -455,7 +455,6 @@ function applyCloudOnlyFeatureGates(
       marketplace: false,
       init: false,
       marketing: false,
-      multiTenancy: false,
       oauth2Server: false,
     }
   }
