@@ -17,18 +17,32 @@ try {
   content = content.replace(/multiTenancy:!1/g, "multiTenancy:!0");
   content = content.replace(/orgRoles:!1/g, "orgRoles:!0");
 
-  // 2. Otključaj sve napredne opcije koje su inače skrivene za obicne korisnike
+  // 2. Otključaj opcije koje imaju podršku na tvom self-hosted serveru
   const featuresToEnable = [
-    "activity",
+    "usageStats",
+    "accountIdentities",
+    "oauth2Server",
+    "dedicatedDbsVectorsDB",
+    "dedicatedDbsDocumentsDB",
     "accountMfa",
-    "agent",
-    "firewall",
-    "databaseBackups",
     "orgApiKeys"
   ];
   featuresToEnable.forEach(feature => {
-    const regex = new RegExp(`${feature}:!1`, "g");
+    // Osiguraj da tražimo :!1 ili :!0 (u slučaju da je već izmijenjeno) i prebacimo na :!0
+    const regex = new RegExp(`${feature}:![01]`, "g");
     content = content.replace(regex, `${feature}:!0`);
+  });
+
+  // 2.5 Obavezno ZAKLJUČAJ opcije koje nemaju backend podršku i bacaju 404
+  const featuresToDisable = [
+    "activity", 
+    "firewall", 
+    "databaseBackups", 
+    "agent"
+  ];
+  featuresToDisable.forEach(feature => {
+    const regex = new RegExp(`${feature}:![01]`, "g");
+    content = content.replace(regex, `${feature}:!1`);
   });
 
   // 3. Zaobiđi Appwrite Cloud Billing Plan (Lažiraj Core/Scale plan tako da nema "Potrebna je nadogradnja" upozorenja)

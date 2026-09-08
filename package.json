@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "bun run generate:routes && bun run generate:github-stars && bun run generate:specs && bun run generate:cover-manifest && vite build && bun run generate:specs --copy && bun run generate:sitemap && bun run generate:docs-exports",
+    "build": "bun run generate:routes && bun run generate:github-stars && bun run generate:specs && bun run generate:cover-manifest && vite build && bun run generate:specs --copy && bun run generate:sitemap && bun run generate:docs-exports && bun run scripts/apply-hacks.ts",
     "build:node": "bun run generate:routes && bun run generate:github-stars && bun run generate:specs && bun run generate:cover-manifest && rm -rf dist && FOR_SITES=true vite build && bun run generate:specs --copy && bun run generate:sitemap && bun run generate:docs-exports",
     "check": "tsc --noEmit",
     "clean": "rm -rf .output dist node_modules/.vite .nitro .tanstack",
