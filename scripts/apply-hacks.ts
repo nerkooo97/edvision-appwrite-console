@@ -13,9 +13,9 @@ try {
   let content = fs.readFileSync(file, "utf8");
   const oldContent = content;
 
-  // 1. Uključi Teams (Organizations) u navigaciji - multiTenancy
-  content = content.replace(/multiTenancy:!1/g, "multiTenancy:!0");
-  content = content.replace(/orgRoles:!1/g, "orgRoles:!0");
+  // 1. ZAKLJUČAJ Teams (Organizations) u navigaciji - ovo je Cloud-only i baca 404 greške na self-hosted serverima
+  content = content.replace(/multiTenancy:!0/g, "multiTenancy:!1");
+  content = content.replace(/orgRoles:!0/g, "orgRoles:!1");
 
   // 2. Otključaj opcije koje imaju podršku na tvom self-hosted serveru
   const featuresToEnable = [
@@ -38,7 +38,9 @@ try {
     "activity", 
     "firewall", 
     "databaseBackups", 
-    "agent"
+    "agent",
+    "multiTenancy",
+    "orgRoles"
   ];
   featuresToDisable.forEach(feature => {
     const regex = new RegExp(`${feature}:![01]`, "g");
